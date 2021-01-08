@@ -25,10 +25,22 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
-header {}
+header {
+	display: flex;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: var(--main-accent);
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+	z-index: 10;
+}
 #title {}
 #headshot {
 	width: 20%;
+	float: right;
+	margin-right: 10px;
 }
 
 .portal-box {}
