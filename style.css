@@ -28,11 +28,14 @@ h1,h2,h3,h4,h5,h6 {
 header, footer {
 	background-color: var(--main-blue);
 	border-radius: 2em;
-	border:
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+	margin: 20px auto;
 }
 
 main {
-
+	display: block;
+	margin: 20px auto;
+	padding: 1.5em;
 }
 
 #headshot {
