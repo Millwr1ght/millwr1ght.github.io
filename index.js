@@ -2,5 +2,5 @@ let d = new Date();
 let currentYear = d.getFullYear();
 let modified = document.lastModified;
 
-document.getElementById("thisYear").textContent = currentYear;
-document.getElementById("lastUpdated").textContent = modified;
+document.getElementById("thisYear").innerHTML = currentYear;
+document.getElementById("lastUpdated").innerHTML = modified;
