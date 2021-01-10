@@ -33,10 +33,14 @@ header, footer {
   	margin: 0 auto;
 }
 
-main {
+main, hr {
 	display: block;
 	max-width: 960px;
 	margin: 0 auto;
+}
+
+hr {
+	justify-self: center;
 }
 
 .title {
