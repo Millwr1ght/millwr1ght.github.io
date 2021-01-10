@@ -23,16 +23,15 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: "Merriweather", serif;
 	text-align: center;
 }
-
+hr {/**/}
 
 /* HEADER */
 header {
-	display: flex;
-	align-items: center;
+	display: block;
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 960px;
 	background: var(--main-accent);
 	border-radius: 1em;
 }
@@ -41,6 +40,8 @@ header {
 	font-weight: bold;
 }
 /* END Header*/
+
+
 /* BODY Content*/
 #content {
 	background-color: var(--main-white);
@@ -51,26 +52,31 @@ header {
 	width: 20%;
 	float: right;
 	margin-right: 10px;
-	z-index: 10;
 	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+	z-index: 10;
 }
-.portal-box {}
-.portal-heading {}
+.portal-box {/**/}
+.portal-heading {/**/}
 .portal-list {
 	list-style: none;
 }
-.portal.list-item {}
+.portal.list-item {/**/}
 .portal-link {
 	text-decoration: none; /* no one likes underlined links*/
 }
 /*END BODY*/
 /* FOOTER Content*/
-footer {}
-.copy-box {}
-.update {}
+footer {
+	display: block;
+	width: 960px;
+	background: var(--main-accent);
+	border-radius: 1em;
+}
+.copy-box {/**/}
+.update {/**/}
 
 
 
 @media (max-width: 960px) {
-
+	#headshot {/**/}
 }
