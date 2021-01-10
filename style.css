@@ -16,11 +16,19 @@ body {
 	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 16px;
 	max-width: 960px;
-	margin: 0 auto;
+	margin: 2em auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Merriweather", 'Times New Roman', Times, serif;
+	text-align: center;
+	font-weight: bold;
 }
 
 header, footer {
 	background-color: var(--main-blue);
+	border-radius: 2em;
+	border:
 }
 
 main {
@@ -30,6 +38,8 @@ main {
 #headshot {
 	float: right;
 	width: 150px;
+	margin-top: -75px;
+	margin-right: 40px;
 }
 
 .portal-list {
@@ -43,6 +53,12 @@ main {
 	color: var(--main-blue);
 }
 
+.copy-box, .update {
+	font-size: 14px;
+	text-align: center;
+	padding: 1em;
+	margin: 2em auto;
+}
 
 @media screen and (max-width: 640px) {
     img {
