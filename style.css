@@ -5,9 +5,9 @@
 
 :root {
   --main-white: #f0f0f0;
-  --main-blue: #729EA1;
+  --main-blue: #729EA1;   /* primary */
   --main-accent: #dfbe99; /*secondary*/
-  --main-accent2: #ec9192; /*accent 1*/
+  --main-accent2: #ec9192;
   --main-gray: #303841;
 }
 
@@ -19,12 +19,13 @@ body {
 	margin: 0;
 	max-width: 960px;
 }
-
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Merriweather", serif;
 	text-align: center;
 }
 
+
+/* HEADER */
 header {
 	display: flex;
 	align-items: center;
@@ -33,17 +34,26 @@ header {
 	left: 0;
 	width: 100%;
 	background: var(--main-accent);
-	border-radius: 4px;
-	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-	z-index: 10;
+	border-radius: 1em;
 }
-#title {}
+#title {
+	padding: 1em;
+	font-weight: bold;
+}
+/* END Header*/
+/* BODY Content*/
+#content {
+	background-color: var(--main-white);
+	margin: 0 auto;
+	padding: 1em;
+}
 #headshot {
 	width: 20%;
 	float: right;
 	margin-right: 10px;
+	z-index: 10;
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 }
-
 .portal-box {}
 .portal-heading {}
 .portal-list {
@@ -53,7 +63,8 @@ header {
 .portal-link {
 	text-decoration: none; /* no one likes underlined links*/
 }
-
+/*END BODY*/
+/* FOOTER Content*/
 footer {}
 .copy-box {}
 .update {}
