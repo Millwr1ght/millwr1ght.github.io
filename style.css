@@ -38,6 +38,10 @@ main {
 	padding: 1.5em;
 }
 
+.title {
+	padding: 2em;
+}
+
 #headshot {
 	float: right;
 	width: 150px;
@@ -59,8 +63,8 @@ main {
 .copy-box, .update {
 	font-size: 14px;
 	text-align: center;
-	padding: 1em;
-	margin: 2em auto;
+	padding: 0.5em;
+	margin: 1em auto;
 }
 
 @media screen and (max-width: 640px) {
