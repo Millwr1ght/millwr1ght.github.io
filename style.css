@@ -17,7 +17,6 @@ body {
 	padding: 5px 25px;
 	font-size: 16px;
 	margin: 0;
-	max-width: 960px;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Merriweather", serif;
@@ -35,7 +34,7 @@ header {
 	background: var(--main-accent);
 	border-radius: 1em;
 }
-#title {
+.title {
 	padding: 1em;
 	font-weight: bold;
 }
@@ -43,9 +42,10 @@ header {
 
 
 /* BODY Content*/
-#content {
+.content {
 	background-color: var(--main-white);
 	margin: 0 auto;
+	max-width: 960px;
 	padding: 1em;
 }
 #headshot {
