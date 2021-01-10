@@ -27,9 +27,6 @@ hr {/**/}
 /* HEADER */
 header, footer {
 	display: block;
-	position: fixed;
-	top: 0;
-	left: 0;
 	width: 960px;
 	background: var(--main-accent);
 	border-radius: 1em;
@@ -50,11 +47,11 @@ header, footer {
 	padding: 1em;
 }
 #headshot {
-	width: 20%;
 	float: right;
-	margin-right: 10px;
+	margin-top: -50;
+	margin-right: 30px;
 	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-	z-index: 10;
+	z-index: -1;
 }
 .portal-box {/**/}
 .portal-heading {/**/}
