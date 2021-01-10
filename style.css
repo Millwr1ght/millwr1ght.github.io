@@ -30,6 +30,7 @@ header, footer {
 	width: 960px;
 	background: var(--main-accent);
 	border-radius: 1em;
+	margin: 2em auto;
 }
 .title {
 	padding: 1em;
@@ -40,16 +41,9 @@ header, footer {
 
 
 /* BODY Content*/
-.content {
-	background-color: var(--main-white);
-	margin: 0 auto;
-	max-width: 960px;
-	padding: 1em;
-}
 #headshot {
 	float: right;
-	margin-top: -50;
-	margin-right: 30px;
+	width: 200px;
 	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 	z-index: -1;
 }
