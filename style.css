@@ -11,3 +11,45 @@
   --main-gray: #303841;
 }
 
+body {
+	background-color: var(--main-white);
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 16px;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+header, footer {
+	background-color: var(--main-blue);
+}
+
+main {
+
+}
+
+#headshot {
+	float: right;
+	width: 150px;
+}
+
+.portal-list {
+	list-style: none;
+}
+.portal-link {
+	text-decoration: none;
+	color: black;
+}
+.portal-link:hover {
+	color: var(--main-blue);
+}
+
+
+@media screen and (max-width: 640px) {
+    img {
+        float: none;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
