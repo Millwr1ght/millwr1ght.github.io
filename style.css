@@ -40,7 +40,7 @@ main, hr {
 }
 
 hr {
-	justify-self: center;
+	margin auto;
 }
 
 .title {
