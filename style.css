@@ -14,7 +14,7 @@
 body {
 	background-color: var(--main-white);
 	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	max-width: 960px;
 	margin: 2em auto;
 }
@@ -25,9 +25,17 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: bold;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	color: var(--main-blue);
+}
+
 header, footer {
 	background-color: var(--main-blue);
-	border-radius: 2em;
+	border-radius: 1.5em;
 	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 	max-width: 960px;
   	margin: 0 auto;
@@ -60,13 +68,6 @@ hr {
 }
 .portal-list {
 	list-style: none;
-}
-.portal-link {
-	text-decoration: none;
-	color: black;
-}
-.portal-link:hover {
-	color: var(--main-blue);
 }
 
 .copy-box, .update {
