@@ -1,4 +1,6 @@
 let d = new Date();
-document.getElementById("thisYear").textContent = d.getFullYear();
 console.log(d, d.getFullYear());
-document.getElementById("lastUpdated").textContent = document.lastModified;
+document.getElementById('thisYear').textContent = d.getFullYear();
+
+let lastModified = new Date();
+document.getElementById("lastUpdated").innerHTML = lastModified.toUTCString();
