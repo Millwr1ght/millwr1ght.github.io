@@ -1,6 +1,3 @@
 var d = new Date();
-var currentYear = d.getFullYear();
-var modified = document.lastModified;
-
-document.getElementById("thisYear").innerHTML = currentYear;
-document.getElementById("lastUpdated").innerHTML = modified;
+document.getElementById("thisYear").innerHTML = d.getFullYear();
+document.getElementById("lastUpdated").innerHTML = document.lastModified;
