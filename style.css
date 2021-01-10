@@ -21,7 +21,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: "Merriweather", 'Times New Roman', Times, serif;
-	text-align: center;
+	text-align: left;
 	font-weight: bold;
 }
 
@@ -40,11 +40,12 @@ main, hr {
 }
 
 hr {
-	margin auto;
+	margin-left: 40px;
 }
 
 .title {
 	padding: 1em;
+	text-align: center;
 }
 
 #headshot {
@@ -54,6 +55,9 @@ hr {
 	margin-right: 40px;
 }
 
+.portal-heading {
+	margin-left: 40px;
+}
 .portal-list {
 	list-style: none;
 }
