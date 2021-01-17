@@ -45,18 +45,22 @@
     }
     
     main {
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+
+    .design-principles-box {
         display: grid;
         grid-template-columns: 10px 1fr 1fr 1fr 10px;
         grid-template-rows: 100px 1fr 75px;
         grid-gap: 1em;
-        max-width: 1080px;
-        margin: 0 auto;
     }
 
     .design-principle-card {
         border-radius: 0.5em;
         background-color: var(--main-accent);
         box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+        padding: 1em;
     }
 
     #repetition {
@@ -75,6 +79,7 @@
 
     .card-img {
         width: 100%;
+        0.5em solid var(--main-blue);
     }
     .card-paragraph {
         padding: 1em;
