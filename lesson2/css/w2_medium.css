@@ -1,5 +1,8 @@
 /* medium */
 @media screen and (max-width: 960px) {
+    header, footer {
+        width: 100%;
+    }
     main {
         display: grid;
         grid-template-columns: 50px 1fr 1fr 50px;

@@ -36,26 +36,33 @@
         background-color: var(--main-blue);
         border-radius: 1.5em;
         box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-        max-width: 960px;
+        max-width: 1080px;
         margin: 0 auto;
     }
     
     main {
         display: grid;
         grid-template-columns: 10px 1fr 1fr 1fr 10px;
-        grid-template-rows: 200px 1fr 75px;
+        grid-template-rows: 100px 1fr 75px;
+        max-width: 1080px;
+        margin: 0 auto;
     }
 
     .design-principle-card {
         border-radius: 0.5em;
+        background-color: var(--main-accent);
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     }
 
     #repetition {
         grid-column: 2/3;
+        grid-row: 2/3;
     }
     #contrast {
         grid-column: 3/4;
+        grid-row: 2/3;
     }
     #alignment {
         grid-column: 4/5;
+        grid-row: 2/3;
     }
