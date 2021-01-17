@@ -20,7 +20,7 @@
     
     h1,h2,h3,h4,h5,h6 {
         font-family: "Merriweather", 'Times New Roman', Times, serif;
-        text-align: left;
+        text-align: center;
         font-weight: bold;
     }
     
@@ -44,6 +44,7 @@
         display: grid;
         grid-template-columns: 10px 1fr 1fr 1fr 10px;
         grid-template-rows: 100px 1fr 75px;
+        grid-gap: 1em;
         max-width: 1080px;
         margin: 0 auto;
     }
@@ -65,4 +66,12 @@
     #alignment {
         grid-column: 4/5;
         grid-row: 2/3;
+    }
+
+
+    .card-img {
+        width: 100%;
+    }
+    .card-paragraph {
+        padding: 1em;
     }

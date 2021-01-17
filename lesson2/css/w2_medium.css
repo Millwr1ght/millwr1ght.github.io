@@ -10,9 +10,11 @@
     }
     #repetition {
         grid-column: 2/3;
+        grid-row: 2/3;
     }
     #contrast {
         grid-column: 3/4;
+        grid-row: 2/3;
     }
     #alignment {
         grid-column: 2/3;
