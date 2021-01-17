@@ -56,7 +56,7 @@
     .design-principles-box {
         display: grid;
         grid-template-columns: 10px 1fr 1fr 1fr 10px;
-        grid-template-rows: 100px 1fr 75px;
+        grid-template-rows: 10px 1fr 10px;
         grid-gap: 1em;
     }
 

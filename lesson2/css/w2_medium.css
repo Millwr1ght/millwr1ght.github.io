@@ -6,7 +6,7 @@
     .design-principles-box {
         display: grid;
         grid-template-columns: 50px 1fr 1fr 50px;
-        grid-template-rows: 200px 1fr 1fr 75px;
+        grid-template-rows: 10px 1fr 1fr 10px;
     }
     #repetition {
         grid-column: 2/3;
