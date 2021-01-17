@@ -1,7 +1,8 @@
 /* medium */
 @media screen and (max-width: 960px) {
-    main {
+    {
         grid-template-columns: 50px 1fr 1fr 50px;
+        grid-template-rows: 200px 2fr 75px;
     }
 }
 
