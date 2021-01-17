@@ -11,7 +11,7 @@
     }
     
     body {
-        background-color: var(--main-white);
+        background-color: var(--main-blue);
         font-family: "Open Sans", Arial, sans-serif;
         font-size: 18px;
         max-width: 1260px;
@@ -35,13 +35,17 @@
     header, footer {
         background-color: var(--main-accent);
 	    border-radius: 1.5em;
-	    border-color: var(--main-gray);
+	    border: 0.5px solid var(--main-gray);
         box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
         max-width: 1080px;
         margin: 0 auto;
     }
-    footer {
+
+    .copy-box, .update {
         font-size: 14px;
+        text-align: center;
+        padding: 0.5em;
+        margin: 1em auto;
     }
     
     main {
@@ -58,7 +62,7 @@
 
     .design-principle-card {
         border-radius: 0.5em;
-        background-color: var(--main-accent);
+        background-color: var(--main-white);
         box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
         padding: 1em;
     }
@@ -79,7 +83,7 @@
 
     .card-img {
         width: 100%;
-        0.5em solid var(--main-blue);
+        border: 0.5em solid var(--main-blue);
     }
     .card-paragraph {
         padding: 1em;
