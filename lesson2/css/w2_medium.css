@@ -1,8 +1,19 @@
 /* medium */
 @media screen and (max-width: 960px) {
     main {
+        display: grid;
         grid-template-columns: 50px 1fr 1fr 50px;
         grid-template-rows: 200px 1fr 1fr 75px;
+    }
+    #repetition {
+        grid-column: 2/3;
+    }
+    #contrast {
+        grid-column: 3/4;
+    }
+    #alignment {
+        grid-column: 2/3;
+        grid-row: 3/4;
     }
 }
 

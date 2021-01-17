@@ -1,8 +1,21 @@
 /* small */
 @media screen and (max-width: 560px) {
     main {
+        display: grid;
         grid-template-columns: 10px 1fr 10px;
         grid-template-rows: 200px 1fr 1fr 1fr 75px;
+    }
+    #repetition {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    #contrast {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #alignment {
+        grid-column: 2/3;
+        grid-row: 4/5;
     }
 
     

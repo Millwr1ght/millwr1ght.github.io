@@ -2,21 +2,60 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 
-:root {
-    --main-white: #f0f0f0;
-    --primary: #d500d8;
-    --secondary: #22dd22;
-}
+    :root {
+        --main-white: #f0f0f0;
+        --main-blue: #729EA1;   /* primary */
+        --main-accent: #dfbe99; /*secondary*/
+        --main-accent2: #ec9192;
+        --main-gray: #303841;
+    }
+    
+    body {
+        background-color: var(--main-white);
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: 18px;
+        max-width: 1260px;
+        margin: 2em auto;
+    }
+    
+    h1,h2,h3,h4,h5,h6 {
+        font-family: "Merriweather", 'Times New Roman', Times, serif;
+        text-align: left;
+        font-weight: bold;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    a:hover {
+        color: var(--main-blue);
+    }
+    
+    header, footer {
+        background-color: var(--main-blue);
+        border-radius: 1.5em;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: 10px 1fr 1fr 1fr 10px;
+        grid-template-rows: 200px 1fr 75px;
+    }
 
-body {
-	background-color: var(--main-white);
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 18px;
-	max-width: 960px;
-	margin: 2em auto;
-}
+    .design-principle-card {
+        border-radius: 0.5em;
+    }
 
-main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
+    #repetition {
+        grid-column: 2/3;
+    }
+    #contrast {
+        grid-column: 3/4;
+    }
+    #alignment {
+        grid-column: 4/5;
+    }
