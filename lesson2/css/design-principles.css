@@ -33,8 +33,9 @@
     }
     
     header, footer {
-        background-color: var(--main-blue);
-        border-radius: 1.5em;
+        background-color: var(--main-accent);
+	    border-radius: 1.5em;
+	    border-color: var(--main-gray);
         box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
         max-width: 1080px;
         margin: 0 auto;

@@ -12,7 +12,7 @@
 }
 
 body {
-	background-color: var(--main-white);
+	background-color: var(--main-blue);
 	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 18px;
 	max-width: 960px;
@@ -34,8 +34,9 @@ a:hover {
 }
 
 header, footer {
-	background-color: var(--main-blue);
+	background-color: var(--main-accent);
 	border-radius: 1.5em;
+	border-color: var(--main-gray);
 	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 	max-width: 960px;
   	margin: 0 auto;
