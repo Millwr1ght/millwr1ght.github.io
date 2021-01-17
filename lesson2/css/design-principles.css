@@ -20,17 +20,3 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-
-/* medium */
-@media screen and (max-width: 960px) {
-    main {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* small */
-@media screen and (max-width: 640px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-}
