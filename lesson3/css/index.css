@@ -1,0 +1,11 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+:root {
+  --main-white: #ffffff;    
+  --main-color: #2BB6A8;   /* primary */
+  --main-accent: #DE172E; /* accent 1*/
+  --main-accent2: #FF9F1C;/* accent 2*/
+  --main-gray: #011627;
+}
