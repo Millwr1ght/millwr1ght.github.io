@@ -1,6 +1,5 @@
 /* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap');
 
 :root {
   --main-white: #ffffff;    
@@ -8,4 +7,12 @@
   --main-accent: #DE172E; /* accent 1*/
   --main-accent2: #FF9F1C;/* accent 2*/
   --main-gray: #011627;
+}
+
+body {
+    font-family: 'Lora', 'Times New Roman', Times, serif;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
