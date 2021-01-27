@@ -2,17 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap');
 
 :root {
+  /* color scheme */
   --main-white: #ffffff;    
-  --main-color: #2BB6A8;   /* primary */
-  --main-accent: #DE172E; /* accent 1*/
-  --main-accent2: #FF9F1C;/* accent 2*/
+  --color-primary: #2BB6A8; /* primary */
+  --color-secondary: #185F8C; /*secondary */
+  --color-accent1: #DE172E;  /* accent 1*/
+  --color-accent2: #FF9F1C;/* accent 2*/
   --main-gray: #011627;
+
+  /* color usage */
+  --headline-color-on-white: black;
+  --headline-color-on-color: black; 
+  --paragraph-color-on-white: black; 
+  --paragraph-color-on-color: black;
+  --nav-link-color: var(--primary-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: var(--main-white);
+  --nav-hover-background-color: var(--primary-color);
+
+  /* typography */
+  --heading-font: 'Lora', 'Times New Roman', serif;
+  --paragraph-font: "Open Sans", Arial, sans-serif;
 }
 
 body {
-    font-family: 'Lora', 'Times New Roman', Times, serif;
+    font-family: var(--paragraph-font);
 }
 
 h1,h2,h3,h4 {
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-family: var(--heading-font);
 }
