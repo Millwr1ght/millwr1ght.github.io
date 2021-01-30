@@ -60,7 +60,7 @@ header > h1, header > h2 {
   display: grid;
   justify-content: center;
 
-  grid-template-columns: repeat(15, 6%);
+  grid-template-columns: repeat(14, 7%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
   grid-template-areas: ". . . . . . home home . . . . . ."
     ". . . . . . . top . . . . . ."
