@@ -3,17 +3,17 @@
 
 :root {
   /* color scheme */
-  --main-white: #ffffff;    
-  --color-primary: #2BB6A8; /* primary */
-  --color-secondary: #185F8C; /*secondary */
-  --color-accent1: #DE172E;  /* accent 1*/
-  --color-accent2: #FF9F1C;/* accent 2*/
+  --main-white: #ffffff;
+  --color-primary: #2BB6A8;
+  --color-secondary: #185F8C; 
+  --color-accent1: #DE172E; 
+  --color-accent2: #FF9F1C;
   --main-gray: #011627;
 
   /* color usage */
   --headline-color-on-white: black;
-  --headline-color-on-color: black; 
-  --paragraph-color-on-white: black; 
+  --headline-color-on-color: black;
+  --paragraph-color-on-white: black;
   --paragraph-color-on-color: black;
   --nav-link-color: var(--primary-color);
   --nav-background-color: var(--secondary-color);
@@ -36,8 +36,11 @@ body {
   font-family: var(--paragraph-font);
 }
 
-h1,h2,h3,h4 {
-    font-family: var(--heading-font);
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
 }
 
 img {
@@ -50,9 +53,40 @@ header {
   color: var(--paragraph-color-on-color);
   background-color: var(--paragraph-background-color);
 }
-header > h1, header > h2 {
+
+header>h1,
+header>h2 {
   color: var(--headline-color-on-color);
 }
+
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+nav>ul {
+  list-style-type: none;
+  display: flex;
+
+}
+
+nav a {
+  padding: 1em;
+  min-width: 70px;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
 
 
 /* Site Plan */
@@ -67,36 +101,43 @@ header > h1, header > h2 {
     ". left left left left2 left2 left2 left3 left3 left3 left4 left4 left4 top"
     "page2 page2 . page3 page3 . page4 page4 . page5 page5 . page6 page6";
 }
-.sitemap > div {
+
+.sitemap>div {
 
   text-align: center;
 
 }
+
 .sm-home {
   grid-area: home;
   background-color: #999;
   line-height: 3em;
 }
+
 .sm-page2 {
   grid-area: page2;
   background-color: #999;
   line-height: 3em;
 }
+
 .sm-page3 {
   grid-area: page3;
   background-color: #999;
   line-height: 3em;
 }
+
 .sm-page4 {
   grid-area: page4;
   background-color: #999;
   line-height: 3em;
 }
+
 .sm-page5 {
   grid-area: page5;
   background-color: #999;
   line-height: 3em;
 }
+
 .sm-page6 {
   grid-area: page6;
   background-color: #999;
@@ -119,6 +160,7 @@ header > h1, header > h2 {
   border-top: 1px solid;
   border-left: 1px solid;
 }
+
 .left3 {
   grid-area: left3;
   border-top: 1px solid;
