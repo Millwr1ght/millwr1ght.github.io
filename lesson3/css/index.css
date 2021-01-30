@@ -5,8 +5,8 @@
   /* color scheme */
   --main-white: #ffffff;
   --color-primary: #2BB6A8;
-  --color-secondary: #185F8C; 
-  --color-accent1: #DE172E; 
+  --color-secondary: #185F8C;
+  --color-accent1: #DE172E;
   --color-accent2: #FF9F1C;
   --main-gray: #011627;
 
@@ -98,7 +98,7 @@ nav a:hover {
   grid-template-rows: 3em 1.5em 1.5em 3em;
   grid-template-areas: ". . . . . . home home . . . . . ."
     ". . . . . . . top . . . . . ."
-    ". left left left left2 left2 left2 left3 left3 left3 left4 left4 left4 top"
+    ". left left left left2 left2 left2 left3 left3 left3 left4 left4 left4 last"
     "page2 page2 . page3 page3 . page4 page4 . page5 page5 . page6 page6";
 }
 
@@ -145,6 +145,11 @@ nav a:hover {
 }
 
 .top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+
+.last {
   grid-area: top;
   border-left: 1px solid;
 }
