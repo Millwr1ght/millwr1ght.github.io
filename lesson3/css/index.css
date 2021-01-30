@@ -53,3 +53,80 @@ header {
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
+
+
+/* Site Plan */
+.sitemap {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(15, 6%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . . . . . home home . . . . . ."
+    ". . . . . . . top . . . . . ."
+    ". left left left left2 left2 left2 left3 left3 left3 left4 left4 left4 top"
+    "page2 page2 . page3 page3 . page4 page4 . page5 page5 . page6 page6";
+}
+.sitemap > div {
+
+  text-align: center;
+
+}
+.sm-home {
+  grid-area: home;
+  background-color: #999;
+  line-height: 3em;
+}
+.sm-page2 {
+  grid-area: page2;
+  background-color: #999;
+  line-height: 3em;
+}
+.sm-page3 {
+  grid-area: page3;
+  background-color: #999;
+  line-height: 3em;
+}
+.sm-page4 {
+  grid-area: page4;
+  background-color: #999;
+  line-height: 3em;
+}
+.sm-page5 {
+  grid-area: page5;
+  background-color: #999;
+  line-height: 3em;
+}
+.sm-page6 {
+  grid-area: page6;
+  background-color: #999;
+  line-height: 3em;
+}
+
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.left2 {
+  grid-area: left2;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+.left3 {
+  grid-area: left3;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.left4 {
+  grid-area: left4;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
