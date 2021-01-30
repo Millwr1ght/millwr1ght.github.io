@@ -87,9 +87,40 @@ nav a:hover {
   background-color: var(--nav-hover-background-color);
 }
 
+/* Color Chart */
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: auto;
+  text-align: center;
+}
 
+.colors th {
+  background-color: #999;
+}
 
-/* Site Plan */
+.colors td {
+  width: 20%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+}
+
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+/* Site Map */
 .sitemap {
   display: grid;
   justify-content: center;
