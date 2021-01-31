@@ -1,8 +1,11 @@
-@media screen and (max-width < 960px) {
+@media screen and (max-width: 960px) {
     .nav-button {
         display: block;
     }
     nav {
         display: none;
     }
+    
+
+
 }

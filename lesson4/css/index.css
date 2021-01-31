@@ -97,6 +97,9 @@ nav a:hover {
     flex-direction: column;
 }
 
+.logo {
+    width: 100px;
+}
 
 /* main */
 
