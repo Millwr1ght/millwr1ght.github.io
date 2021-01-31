@@ -31,7 +31,7 @@
         display: none;
     }
 
-    .top-nav>ul>li {
-        justify-content: space-between;
+    .top-nav>ul {
+        justify-content: space-around;
     }
 }
