@@ -15,6 +15,7 @@
     --headline-color-on-color: black;
     --paragraph-color-on-white: black;
     --paragraph-color-on-color: black;
+    --paragraph-background-color: var(--color-secondary);
     --nav-link-color: var(--color-primary);
     --nav-background-color: var(--color-secondary);
     --nav-hover-link-color: var(--main-white);
@@ -130,10 +131,11 @@ main {
     max-width: 960px;
     margin: 0 auto;
     display: block;
+    padding: 2em;
 }
 
 .content {
-    padding: 2em;
+    padding: 1.5em;
     border: 1px dotted var(--main-gray);
 }
 
