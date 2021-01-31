@@ -47,11 +47,16 @@ img {
     max-width: 100%;
 }
 
+/* header styles */
+
 header {
     padding: 1em;
-    text-align: left;
     color: var(--paragraph-color-on-color);
     background-color: var(--paragraph-background-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header>h1,
@@ -85,4 +90,36 @@ nav a:visited {
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
+}
+
+.header-box {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* main */
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* footer */
+footer {
+    background-color: var(--main-accent);
+    max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+}
+
+.copy-box, .update {
+	font-size: 14px;
+	text-align: center;
+	padding: 0.5em;
+    margin: 1em auto;
+    flex-direction: column;
 }
