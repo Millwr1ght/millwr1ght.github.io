@@ -59,6 +59,7 @@ footer {
     color: var(--paragraph-color-on-color);
     background-color: var(--paragraph-background-color);
 }
+
 header {
     display: flex;
     align-items: center;
@@ -68,6 +69,11 @@ header {
 header>h1,
 header>h2 {
     color: var(--headline-color-on-color);
+}
+
+.header-box {
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -102,13 +108,10 @@ nav a:hover {
     display: none;
 }
 
-.header-box {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .logo {
-    width: 100px;
+    width: 20%;
 }
 
 
@@ -132,10 +135,12 @@ footer {
     display: flex;
     align-items: center;
 }
-.copy-box, .update {
-	font-size: 14px;
-	text-align: center;
-	padding: 0.5em;
+
+.copy-box,
+.update {
+    font-size: 14px;
+    text-align: center;
+    padding: 0.5em;
     margin: 1em auto;
     flex-direction: column;
 }
