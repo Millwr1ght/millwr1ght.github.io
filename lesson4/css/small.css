@@ -25,13 +25,9 @@
     --paragraph-font: "Open Sans", Arial, sans-serif;
 }
 
-html {
-    background-color: var(--color-primary);
-}
-
 body {
     margin: 0 auto;
-    background-color: var(--main-white);
+    background-color: var(--color-primary);
     font-family: var(--paragraph-font);
     font-size: 16px;
 }
@@ -119,6 +115,7 @@ nav a:hover {
 /* main ----------------------------------------------------------------------*/
 
 main {
+    background-color: var(--main-white);
     max-width: 960px;
     margin: 0 auto;
     display: block;
