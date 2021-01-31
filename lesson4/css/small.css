@@ -88,7 +88,8 @@ nav {
     background-color: var(--nav-background-color);
     line-height: 3em;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
+    width: 100%;
 }
 
 nav>ul {
@@ -116,8 +117,6 @@ nav a:hover {
     display: none;
 }
 
-
-
 .logo {
     width: 100px;
 }
@@ -144,6 +143,7 @@ main {
 footer {
     display: flex;
     align-items: center;
+    max-width: 960px;
 }
 
 .copy-box,
