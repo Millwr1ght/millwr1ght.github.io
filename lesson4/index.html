@@ -7,31 +7,29 @@
     <title>KWDD 230 Weather | Preston | Nathan Johnston</title>
     <meta name="description" content="The latest updates for weather news for southeastern Idaho">
     <link rel="stylesheet" type="text/css" href="../lesson3/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/smaller.css">
+    <link rel="stylesheet" type="text/css" href="css/small.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script src="js/index.js"></script>
 </head>
 
 <body>
     <header>
-        <img class="logo" alt="KWDD Weather" src="/images/partly-cloudy.svg">
+        <img class="logo" alt="KWDD Weather" src="images/partly-cloudy.svg">
         <div class="header-box">
             <h1>KWDD 230 Weather</h1>
             <p>The latest updates for weather news for southeastern Idaho</p>
         </div>
         
-        <!-- small page-->
-        <button class="nav-button" onclick="navToggle()"><img class="nav-icon" alt="nav-icon" src="images/icons8-menu.svg"></button>
-        
-        <!-- big page -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Preston</a></li>
-                <li><a href="index.html">Soda Springs</a></li>
-                <li><a href="index.html">Fish Haven</a></li>
-                <li><a href="index.html">Storm Center</a></li>
-                <li><a href="index.html">Gallery</a></li>
+
+        <nav id="top-nav">
+            <ul class="nav-list">
+                <li class="nav-icon"><img onclick="navToggle()"id="menu-icon" alt="nav-icon" src="images/icons8-menu.svg"></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Preston</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Soda Springs</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Fish Haven</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Storm Center</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
@@ -40,14 +38,19 @@
     
         <h2 class="main-title">Preston, Idaho</h2>
 
-        <div class="hero-box">
+        <div class="hero-box content">
+            <h3 class="hero-heading">Hero Image and Weather Summary</h3>
             <!-- <img class="hero-image" alt="hero-image" src="https://via.placeholder.com/960x150">-->
         </div> 
-        <div class="forecast-box">
-            <!--<h3 class="forecast-heading">Five Day Forecast</h3>-->
+        <div class="forecast-box content">
+            <h3 class="forecast-heading">Five Day Forecast</h3>
         </div>
-        <div class="article-box"></div>
-        <div class="contact-box"></div>
+        <div class="article-box content">
+            <h3 class="article-heading">Article</h3>
+        </div>
+        <div class="contact-box" content>
+            <h3 class="contact-heading">Contact Information</h3>
+        </div>
         
     </main>
 
