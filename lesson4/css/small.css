@@ -15,10 +15,10 @@
     --headline-color-on-color: black;
     --paragraph-color-on-white: black;
     --paragraph-color-on-color: black;
-    --nav-link-color: var(--primary-color);
-    --nav-background-color: var(--secondary-color);
+    --nav-link-color: var(--color-primary);
+    --nav-background-color: var(--color-secondary);
     --nav-hover-link-color: var(--main-white);
-    --nav-hover-background-color: var(--primary-color);
+    --nav-hover-background-color: var(--color-primary);
 
     /* typography */
     --heading-font: 'Lora', 'Times New Roman', serif;
