@@ -63,7 +63,6 @@ a {
 
 header,
 footer {
-    padding: 1em;
     color: var(--paragraph-color-on-color);
     background-color: var(--paragraph-background-color);
 }
