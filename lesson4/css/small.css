@@ -43,6 +43,17 @@ img {
     width: 100%;
 }
 
+ul {
+    list-style: none;
+    /* no one likes bullet points */
+}
+
+a {
+    text-decoration: none;
+    /* no one likes underlined links*/
+    color: var(--main-gray);
+}
+
 .hidden {
     display: none;
 }
