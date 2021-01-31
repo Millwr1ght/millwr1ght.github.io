@@ -9,10 +9,5 @@ document.getElementById('lastUpdated').innerHTML = lastModified;
 var width = window.innerWidth
 
 function navToggle() {
-    let topNav = document.getElementById('top-nav');
-    if (topNav.className === "top-nav") {
-        topNav.className += " responsive";
-    } else {
-        topNav.className = "top-nav";
-    }
+    document.getElementById('top-nav').classList.toggle("hidden");
 }

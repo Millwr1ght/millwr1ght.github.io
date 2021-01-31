@@ -1,4 +1,4 @@
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 640px) {
     .nav-button {
         display: none;
     }
@@ -12,4 +12,5 @@
         align-items: center;
         justify-content: center;
     }
+    
 }

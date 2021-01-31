@@ -1,11 +1,141 @@
-@media screen and (max-width: 640px) {
-    .nav-button {
-        display: block;
-    }
-    nav {
-        display: none;
-    }
-    
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap');
+
+:root {
+    /* color scheme */
+    --main-white: #f0f0f0;
+    --color-primary: #2BB6A8;
+    --color-secondary: #185F8C;
+    --color-accent1: #DE172E;
+    --color-accent2: #FF9F1C;
+    --main-gray: #011627;
+
+    /* color usage */
+    --headline-color-on-white: black;
+    --headline-color-on-color: black;
+    --paragraph-color-on-white: black;
+    --paragraph-color-on-color: black;
+    --nav-link-color: var(--primary-color);
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-link-color: var(--main-white);
+    --nav-hover-background-color: var(--primary-color);
+
+    /* typography */
+    --heading-font: 'Lora', 'Times New Roman', serif;
+    --paragraph-font: "Open Sans", Arial, sans-serif;
+}
+
+html {
+    background-color: var(--color-primary);
+}
+
+body {
+    margin: 0 auto;
+    background-color: var(--main-white);
+    font-family: var(--paragraph-font);
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--heading-font);
+}
+
+img {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+/* header styles------------------------------------------------------------------------------ */
+
+header,
+footer {
+    padding: 1em;
+    color: var(--paragraph-color-on-color);
+    background-color: var(--paragraph-background-color);
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header>h1,
+header>h2 {
+    color: var(--headline-color-on-color);
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+nav a {
+    padding: 1em;
+    min-width: 70px;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.nav-icon {
+    display: none;
+}
+
+.header-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 100px;
+}
 
 
+
+/* main ----------------------------------------------------------------------*/
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    display: block;
+}
+
+.content {
+    padding: 2em;
+    border: 1px dotted var(--main-gray);
+}
+
+
+/* footer */
+footer {
+    display: flex;
+    align-items: center;
+}
+.copy-box, .update {
+	font-size: 14px;
+	text-align: center;
+	padding: 0.5em;
+    margin: 1em auto;
+    flex-direction: column;
 }
