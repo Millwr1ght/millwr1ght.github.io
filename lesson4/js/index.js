@@ -1,6 +1,6 @@
 let lastModified = document.lastModified;
 let updateSpan = document.getElementById('lastUpdated');
-console.log(document.lastModified, lastModified);
+console.log(lastModified, updateSpan);
 updateSpan.innerHTML = lastModified;
 
 let d = new Date();
