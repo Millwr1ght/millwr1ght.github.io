@@ -16,10 +16,10 @@
     --paragraph-color-on-white: black;
     --paragraph-color-on-color: black;
     --paragraph-background-color: var(--color-secondary);
-    --nav-link-color: var(--color-primary);
-    --nav-background-color: var(--color-secondary);
+    --nav-link-color: var(--color-secondary);
+    --nav-background-color: var(--color-primary);
     --nav-hover-link-color: var(--main-white);
-    --nav-hover-background-color: var(--color-primary);
+    --nav-hover-background-color: var(--color-secondary);
 
     /* typography */
     --heading-font: 'Lora', 'Times New Roman', serif;
