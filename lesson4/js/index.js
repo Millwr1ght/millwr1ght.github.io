@@ -1,10 +1,12 @@
 let lastModified = document.lastModified;
+let updateSpan = document.getElementById('lastUpdated');
 console.log(document.lastModified, lastModified);
-document.getElementById('lastUpdated').innerHTML = lastModified;
+updateSpan.innerHTML = lastModified;
 
 let d = new Date();
+let yearSpan = document.getElementById('thisYear');
 console.log(d.getFullYear());
-document.getElementById('thisYear').textContent = d.getFullYear();
+yearSpan.textContent = d.getFullYear();
 
 function navToggle() {
     document.getElementById('top-nav').classList.toggle("hidden");
