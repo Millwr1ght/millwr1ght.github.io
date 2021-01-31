@@ -80,7 +80,6 @@ header>h2 {
 
 .header-box {
     display: flex;
-    flex-direction: column;
 }
 
 nav {
