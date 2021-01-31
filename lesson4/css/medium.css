@@ -1,8 +1,4 @@
 @media screen and (min-width: 640px) {
-    .nav-icon {
-        display: none;
-    }
-
     header,
     footer {
         display: flex;
@@ -34,6 +30,10 @@
         justify-content: center;
     }
 
+    .nav-icon {
+        display: none;
+    }
+    
     main,
     footer {
         max-width: 640px;

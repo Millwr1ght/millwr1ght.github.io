@@ -90,13 +90,22 @@ nav {
     background-color: var(--nav-background-color);
     line-height: 3em;
     text-align: center;
-    font-size: 1em;
     width: 100%;
+}
+
+.nav-icon {
+    display: block;
+    border: none;
+    background: none;
+}
+
+.hidden {
+    display: none;
 }
 
 nav>ul {
     list-style-type: none;
-    display: flex;
+    margin: auto;
     flex-direction: row;
     align-items: center;
 }
