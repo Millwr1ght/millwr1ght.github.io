@@ -3,7 +3,7 @@
 
 :root {
     /* color scheme */
-    --main-white: #ffffff;
+    --main-white: #f0f0f0;
     --color-primary: #2BB6A8;
     --color-secondary: #185F8C;
     --color-accent1: #DE172E;
@@ -30,7 +30,6 @@ html {
 }
 
 body {
-    max-width: 1200px;
     margin: 0 auto;
     background-color: var(--main-white);
     font-family: var(--paragraph-font);
@@ -47,7 +46,7 @@ img {
     max-width: 100%;
 }
 
-/* header styles */
+/* header styles------------------------------------------------------------------------------ */
 
 header {
     padding: 1em;
@@ -105,7 +104,7 @@ nav a:hover {
     width: 100px;
 }
 
-/* main */
+/* main ----------------------------------------------------------------------*/
 
 main {
     max-width: 960px;
