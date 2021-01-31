@@ -1,21 +1,18 @@
 @media screen and (min-width: 640px) {
-    .nav-button {
+    .nav-icon {
         display: none;
-    }
-    nav {
-        display: flex;
     }
     
     header,
     footer {
         display: flex;
         flex-direction: column;
-        justify-content: center;
     }
 
     .header-box {
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
 
     .logo {

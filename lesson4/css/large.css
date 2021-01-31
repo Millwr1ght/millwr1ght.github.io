@@ -1,11 +1,5 @@
 @media screen and (min-width: 960px) {
-    .nav-button {
-        display: none;
-    }
-    nav {
-        display: flex;
-    }
-    
+
     header,
     footer {
         display: flex;
@@ -21,6 +15,7 @@
     .logo {
         width: 150px;
     }
+
     .title-box {
         display: flex;
         flex-direction: column;
@@ -30,6 +25,10 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+
+    .nav-icon {
+        display: none;
     }
 
     .top-nav>ul>li {
