@@ -14,7 +14,7 @@ function navToggle() {
 }
 
 function isTodayFriday (today) {
-    return (today == 5) ? document.getElementById('friday-deal').classList.toggle("hidden"): console.log(today, 'not friday');
+    return (today == 5 ? document.getElementById('friday-deal').classList.toggle("hidden"): console.log(today, 'not friday'));
 }
 
 isTodayFriday(today);
