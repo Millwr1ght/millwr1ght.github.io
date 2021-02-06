@@ -1,0 +1,41 @@
+@media screen and (min-width: 640px) {
+    header,
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .header-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .title-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #top-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-icon {
+        display: none;
+    }
+    
+    main,
+    footer {
+        max-width: 640px;
+    }
+}

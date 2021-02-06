@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KWDD 230 Weather | Preston</title>
+    <meta name="description" content="The latest updates for weather news for southeastern Idaho">
+    <link rel="stylesheet" type="text/css" href="../lesson3/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/small.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-box">
+            <img class="logo" alt="KWDD Weather" src="images/iconfinder_sun_2995005.png">
+            <div class="title-box">
+                <h1>KWDD 230 Weather</h1>
+                <p>The latest updates for weather news for southeastern Idaho</p>
+            </div>
+        </div>
+        
+
+        <nav id="top-nav">
+            <button class="nav-icon" onclick="navToggle()"><img id="menu-icon" alt="nav-icon" src="images/icons8-menu.svg"></button>
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Preston</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Soda Springs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Fish Haven</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Storm Center</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    
+        <h2 class="main-title">Preston, Idaho</h2>
+
+        <div class="hero-box content">
+            <h3 class="hero-heading">Hero Image and Weather Summary</h3>
+            <!-- <img class="hero-image" alt="hero-image" src="https://via.placeholder.com/960x150">-->
+        </div> 
+        <div class="forecast-box content">
+            <h3 class="forecast-heading">Five Day Forecast</h3>
+        </div>
+        <div class="article-box content">
+            <h3 class="article-heading">Article</h3>
+        </div>
+        <div class="contact-box content" content>
+            <h3 class="contact-heading">Contact Information</h3>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p class="copy-box">&copy; &nbsp;<span id="thisYear"></span> | KWDD 230 | Nathan Johnston</p>
+        <p class="update"><span id="lastUpdated"></span></p>
+    </footer>
+</body>
