@@ -23,12 +23,17 @@
         flex-direction: column;
     }
 
-    #top-nav {
+    .nav-list {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
     }
+
+    .nav-list li:first-child {
+		display: none;
+	}
+
 
     .nav-icon {
         display: none;

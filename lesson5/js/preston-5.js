@@ -10,7 +10,7 @@ console.log(d.getFullYear());
 yearSpan.textContent = d.getFullYear()
 
 function navToggle() {
-    document.getElementById('top-nav').classList.toggle("hidden");
+    document.getElementById('top-nav').classList.toggle("responsive");
 }
 
 function isTodayFriday (today) {

@@ -105,16 +105,24 @@ nav {
     background: none;
 }
 
-.hidden {
+.nav-list {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+}
+
+.nav-list li:first-child{
+    display: block;
+}
+
+.nav-list li{
     display: none;
 }
 
-nav>ul {
-    list-style-type: none;
-    margin: auto;
-    flex-direction: row;
-    align-items: center;
+.responsive li{
+    display: block;
 }
+
 
 nav a {
     justify-content: space-around;
@@ -130,10 +138,6 @@ nav a:visited {
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
-}
-
-.nav-icon {
-    display: none;
 }
 
 .logo {
