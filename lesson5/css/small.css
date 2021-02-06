@@ -99,11 +99,6 @@ nav {
     width: 100%;
 }
 
-.nav-icon {
-    display: block;
-    border: none;
-    background: none;
-}
 
 .nav-list {
     list-style-type: none;
@@ -114,6 +109,12 @@ nav {
 .nav-list li:first-child{
     display: block;
 }
+
+.nav-icon {
+    border: none;
+    background: none;
+}
+
 
 .nav-list li{
     display: none;

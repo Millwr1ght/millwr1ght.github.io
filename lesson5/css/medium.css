@@ -34,11 +34,6 @@
 		display: none;
 	}
 
-
-    .nav-icon {
-        display: none;
-    }
-    
     main,
     footer {
         max-width: 640px;
