@@ -17,4 +17,5 @@ function isTodayFriday (today) {
     return (today == 5 ? document.getElementById('friday-deal').classList.toggle("hidden"): console.log(today, 'not friday'));
 }
 
-isTodayFriday(today);
+window.onload = today => {isTodayFriday(today)};
+window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
