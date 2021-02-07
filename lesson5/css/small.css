@@ -177,8 +177,12 @@ main {
     opacity: .8;
 }
 
-.forecast-box {}
-.forecast-container {}
+.forecast-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 3px;
+}
+.forecast-day {}
 
 .article-box {}
 .article-img {}
