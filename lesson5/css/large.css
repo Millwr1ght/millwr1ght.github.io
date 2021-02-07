@@ -39,4 +39,10 @@
     footer {
         max-width: 960px;
     }
+    
+    .article-img {
+        float: right;
+        width: 50%;
+        margin-right: 1em;
+    }
 }
