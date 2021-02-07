@@ -51,4 +51,14 @@
         width: 50%;
         padding: 1em;
     }
+
+    .contact-img {
+        width: 50%;
+    
+    }
+    .contact-paragraph {
+        display: block;
+        float: right;
+        padding: 1em;
+    }
 }

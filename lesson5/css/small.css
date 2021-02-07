@@ -215,7 +215,7 @@ main {
 
 }
 .contact-paragraph {
-    float: right;
+    display: block;
 }
 
 
