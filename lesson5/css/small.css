@@ -190,10 +190,6 @@ main {
     grid-gap: 3px;
 }
 
-.forecast-day {}
-
-.article-box {}
-
 .article-img {
     float: none;
 }
@@ -206,17 +202,20 @@ main {
     display: block;
 }
 
-.article-box button {}
-
-.contact-box {}
+.contact-box {
+    padding: 1em;
+}
 
 .contact-heading {
     text-align: center;
 }
 
 .contact-img {
-    float: right;
     width: 50%;
+
+}
+.contact-paragraph {
+    float: right;
 }
 
 
