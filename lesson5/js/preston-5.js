@@ -17,5 +17,9 @@ function isTodayFriday (today) {
     return (today == 5 ? document.getElementById('friday-deal').classList.toggle("hidden"): console.log(today, 'not friday'));
 }
 
+function redirect() {
+    window.location.replace("https://youtu.be/DLzxrzFCyOs");
+}
+
 window.onload = today => {isTodayFriday(today)};
 window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
