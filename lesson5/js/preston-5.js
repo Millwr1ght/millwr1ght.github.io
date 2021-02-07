@@ -1,11 +1,11 @@
 let lastModified = document.lastModified;
-let updateSpan = document.getElementById('lastUpdated');
+const updateSpan = document.getElementById('lastUpdated');
 console.log(lastModified, updateSpan);
 updateSpan.innerHTML = lastModified;
 
 let d = new Date();
 let today = d.getDay();
-let yearSpan = document.getElementById('thisYear');
+const yearSpan = document.getElementById('thisYear');
 console.log(d.getFullYear());
 yearSpan.textContent = d.getFullYear()
 
