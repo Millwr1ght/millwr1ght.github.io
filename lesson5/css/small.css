@@ -167,40 +167,52 @@ main {
 .hero-box {
     position: relative;
 }
-.hero-img {}
+
+.hero-img {
+    width: 100%;
+}
+
 .hero-weather {
-    position: absolute;
-    top: 25px;
-    right: 50px;
-    background: radial-gradient(var(--main-white), var(--color-primary));
+    display: block;
+    background: var(--color-primary);
     border: 1px solid #000;
     padding: 1.5rem;
     box-shadow: 0 0 30px #111;
-    opacity: .8;
+    opacity: .7;
 }
 
-.forecast-box{}
+.forecast-box {}
+
 .forecast-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 3px;
 }
+
 .forecast-day {}
 
 .article-box {}
-.article-img {}
+
+.article-img {
+    float: none;
+}
+
 .article-heading {
     text-align: center;
 }
-.article-box p {
 
+.article-box p {
+    display: block;
 }
+
 .article-box button {}
 
 .contact-box {}
+
 .contact-heading {
     text-align: center;
 }
+
 .contact-img {
     float: right;
     width: 50%;

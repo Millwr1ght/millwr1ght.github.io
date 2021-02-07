@@ -40,6 +40,12 @@
         max-width: 640px;
     }
 
+    .hero-weather {
+        position: absolute;
+        top: 25px;
+        right: 50px;
+    }
+
     .article-img {
         float: right;
         width: 50%;
