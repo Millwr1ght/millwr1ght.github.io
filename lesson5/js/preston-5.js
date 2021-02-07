@@ -22,4 +22,4 @@ function redirect() {
 }
 
 window.onload = today => {isTodayFriday(today)};
-window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
+window.onresize = () => {if (window.innerWidth > 640 ) document.getElementsByClassName('nav-list')[0].classList.remove('responsive')};
