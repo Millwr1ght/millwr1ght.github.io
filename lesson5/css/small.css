@@ -63,7 +63,7 @@ a {
 /* friday deals box ---------------------------------------------------------------------------*/
 
 #friday-deal {
-    width: 100%; 
+    width: 100%;
 }
 
 /* header styles------------------------------------------------------------------------------ */
@@ -107,7 +107,7 @@ nav {
     padding: 0;
 }
 
-.nav-list li:first-child{
+.nav-list li:first-child {
     display: block;
 }
 
@@ -116,7 +116,7 @@ nav {
     background: none;
 }
 
-.nav-list li{
+.nav-list li {
     display: none;
 }
 
@@ -125,7 +125,7 @@ nav {
     color: var(--nav-link-color2);
 }
 
-.responsive li{
+.responsive li {
     display: block;
 }
 
@@ -168,6 +168,22 @@ main {
     padding: 1.5em;
     border: 1px dotted var(--main-gray);
 }
+
+.hero-weather {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    background: radial-gradient(var(--main-white), var(--color-primary));
+    border: 1px solid #000;
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #111;
+    opacity: .8;
+}
+
+
+
+
+
 
 
 /* footer */
