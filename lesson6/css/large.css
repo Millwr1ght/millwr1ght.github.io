@@ -1,0 +1,11 @@
+@media screen and (min-width: 960px) {
+
+    .logo {
+        width: 150px;
+    }
+
+    main,
+    footer {
+        max-width: 960px;
+    }
+}
