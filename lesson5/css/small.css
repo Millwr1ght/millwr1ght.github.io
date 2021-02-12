@@ -181,8 +181,9 @@ main {
     opacity: .7;
 }
 
+/*
 .forecast-box {}
-
+*/
 .forecast-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
