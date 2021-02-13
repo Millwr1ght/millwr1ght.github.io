@@ -31,9 +31,13 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        padding: 0.5em;
     }
 
     .nav-menu {
+        display: none;
+    }
+    .nav-icon {
         display: none;
     }
 
@@ -68,6 +72,6 @@
         display: block;
         float: right;
         padding: 1em;
-        font-size: 20px;
+        font-size: 16px;
     }
 }

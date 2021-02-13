@@ -8,4 +8,8 @@
     footer {
         max-width: 960px;
     }
+
+    .contact-paragraph {
+        font-size: 20px;
+    }
 }
