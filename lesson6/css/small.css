@@ -99,6 +99,7 @@ header>h2 {
     align-items: center;
     justify-content: center;
 }
+
 /* nav ------------------------------------------------------------------------*/
 #top-nav {
     background-color: var(--nav-background-color);
@@ -163,7 +164,7 @@ main {
     max-width: 600px;
     margin: 0 auto;
     display: block;
-    padding: 2em;
+    padding: 1em;
 }
 
 .content {
@@ -222,12 +223,11 @@ main {
     width: 50%;
 
 }
+
 .contact-paragraph {
     display: block;
     text-align: center;
 }
-
-
 
 /* footer */
 footer {
