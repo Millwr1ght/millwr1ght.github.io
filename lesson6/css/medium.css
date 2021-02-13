@@ -57,6 +57,10 @@
         right: 50px;
     }
 
+    .forecast-day {
+        padding: 0.5em;
+    }
+
     .article-img {
         float: right;
         width: 50%;

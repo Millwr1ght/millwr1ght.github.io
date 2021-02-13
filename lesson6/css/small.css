@@ -190,13 +190,17 @@ main {
 }
 
 
-/*.forecast-box {}*/
+/**/
 
 .forecast-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     grid-gap: 3px;
+}
+
+.forecast-day {
+    border: 1px dotted var(--main-gray);
 }
 
 .article-img {
