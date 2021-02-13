@@ -17,7 +17,7 @@ function navToggle() {
 function isTodayFriday (day) {
     //(day == 5) ? document.getElementById('friday-deal').classList.toggle("hidden"): console.log(day, 'not friday');
     if (day == 5) {
-        document.getElementById('friday-deal').classList.remove("hidden").add("shown");
+        document.getElementById('friday-deal').classList.remove("hidden");
         console.log("today is friday");
     } else {
         console.log(day, 'not friday');
@@ -30,4 +30,6 @@ function redirect() {
 
 //window.onload = today => {isTodayFriday(today)};
 isTodayFriday(today);
+
+
 window.onresize = () => {if (window.innerWidth > 640 ) document.getElementsByClassName('nav-list')[0].classList.remove('responsive')};
