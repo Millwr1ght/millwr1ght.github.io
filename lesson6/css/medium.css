@@ -1,5 +1,6 @@
 @media screen and (min-width: 640px) {
 
+    /* header */
     header,
     footer {
         display: flex;
@@ -24,6 +25,7 @@
         flex-direction: column;
     }
 
+    /* nav */
     .nav-list {
         display: flex;
         flex-direction: row;
@@ -31,10 +33,11 @@
         justify-content: center;
     }
 
-    .nav-list li:first-child {
+    .nav-menu {
         display: none;
     }
 
+    /* main */
     main,
     footer {
         max-width: 640px;
@@ -54,11 +57,13 @@
 
     .contact-img {
         width: 50%;
-    
+        padding: 1em;
     }
+
     .contact-paragraph {
         display: block;
         float: right;
         padding: 1em;
+        font-size: 20px;
     }
 }
