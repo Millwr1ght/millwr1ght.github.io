@@ -14,16 +14,15 @@ Processing: 35.74 + 0.6215*temperature - 35.75*windSpeed^(0.16) + 0.4275*tempera
 Output: wind chill factor in Fahrenheit 
 */
 
-function calcWindChill () {
-    let windChillOutput = document.getElementById('summary-wind-chill');
-    //get inputs
-    let temperature = parseFloat(document.getElementById('summary-temp').value);
-    let windSpeed = parseFloat(document.getElementById('summary-wind-speed').value);
-    //check inputs
-    if (temperature > 50 || windSpeed <= 3.0)  {
-        windChillOutput.innerHTML = "N/A";
-    } else {
-        let windChill = 35.74 + 0.6215*temperature - 35.75*windSpeed^(0.16) + 0.4275*temperature*windSpeed^(0.16);
-        windChillOutput.innerHTML = windChill + "°F";
-    }
+
+let windChillOutput = document.getElementById('summary-wind-chill');
+//get inputs
+let temperature = parseFloat(document.getElementById('summary-temp').value);
+let windSpeed = parseFloat(document.getElementById('summary-wind-speed').value);
+//check inputs
+if (temperature > 50 || windSpeed <= 3.0)  {
+    windChillOutput.innerHTML = "N/A";
+} else {
+    let windChill = 35.74 + 0.6215*temperature - 35.75*windSpeed^(0.16) + 0.4275*temperature*windSpeed^(0.16);
+    windChillOutput.innerHTML = windChill + "°F";
 }

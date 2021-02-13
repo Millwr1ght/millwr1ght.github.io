@@ -121,6 +121,7 @@ header>h2 {
 .nav-icon {
     border: none;
     background: none;
+    display: block;
 }
 
 .nav-list li {
