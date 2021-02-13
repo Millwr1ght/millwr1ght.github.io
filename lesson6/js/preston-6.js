@@ -5,12 +5,14 @@ updateSpan.innerHTML = lastModified;
 
 let d = new Date();
 let today = d.getDay();
+let year = d.getFullYear()
 const yearSpan = document.getElementById('thisYear');
-console.log(d.getFullYear());
-yearSpan.textContent = d.getFullYear()
+console.log(year, today);
+yearSpan.textContent = year;
 
 function navToggle() {
     document.getElementById('top-nav').classList.toggle("responsive");
+    console.log('toggled');
 }
 
 function isTodayFriday (today) {
