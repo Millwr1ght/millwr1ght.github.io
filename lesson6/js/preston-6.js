@@ -1,13 +1,12 @@
 let lastModified = document.lastModified;
 const updateSpan = document.getElementById('lastUpdated');
-console.log(lastModified, updateSpan);
 updateSpan.innerHTML = lastModified;
 
 let d = new Date();
 let today = d.getDay();
 let year = d.getFullYear()
 const yearSpan = document.getElementById('thisYear');
-console.log(year, today);
+console.log(today);
 yearSpan.textContent = year;
 
 function navToggle() {
