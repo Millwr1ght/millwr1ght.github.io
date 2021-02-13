@@ -65,6 +65,8 @@ a {
 #friday-deal {
     width: 100%;
     display: none;
+    text-align: center;
+    padding: 5px;
 }
 
 .friday {
