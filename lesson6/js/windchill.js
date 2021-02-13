@@ -19,13 +19,11 @@ function calcWindChill () {
     //get inputs
     let temperature = parseFloat(document.getElementById('summary-temp').value);
     let windSpeed = parseFloat(document.getElementById('summary-wind-speed').value);
-    console.log(temperature, windSpeed);
-    let windChill = 0;
     //check inputs
     if (temperature > 50 || windSpeed <= 3.0)  {
         windChillOutput.innerHTML = "N/A";
     } else {
-        windChill = 35.74 + 0.6215*temperature - 35.75*windSpeed^(0.16) + 0.4275*temperature*windSpeed^(0.16);
+        let windChill = 35.74 + 0.6215*temperature - 35.75*windSpeed^(0.16) + 0.4275*temperature*windSpeed^(0.16);
         windChillOutput.innerHTML = windChill + "°F";
     }
 }
