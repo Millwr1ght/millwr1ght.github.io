@@ -64,6 +64,11 @@ a {
 
 #friday-deal {
     width: 100%;
+    display: none;
+}
+
+.friday {
+    display: block;
 }
 
 /* header styles------------------------------------------------------------------------------ */

@@ -9,28 +9,24 @@ const yearSpan = document.getElementById('thisYear');
 console.log(today);
 yearSpan.textContent = year;
 
+//(day == 5) ? document.getElementById('friday-deal').classList.toggle("hidden"): console.log(day, 'not friday');
+if (today == 5) {
+    console.log("today is friday");
+    document.getElementById('friday-deal').classList.toggle("friday");
+} else {
+    console.log(today, 'not friday');
+    
+}
+
+
+
 function navToggle() {
     document.getElementById('top-nav').classList.toggle("responsive");
     console.log('toggled');
 }
 
-function isTodayFriday (day) {
-    //(day == 5) ? document.getElementById('friday-deal').classList.toggle("hidden"): console.log(day, 'not friday');
-    if (day != 5) {
-        console.log("today is friday");
-        document.getElementById('friday-deal').classList.toggle("hidden");
-    } else {
-        console.log(day, 'not friday');
-        
-    }
-}
-
 function redirect() {
     window.location.replace("https://youtu.be/DLzxrzFCyOs");
 }
-
-//window.onload = today => {isTodayFriday(today)};
-isTodayFriday(today);
-
 
 window.onresize = () => {if (window.innerWidth > 640 ) document.getElementsByClassName('nav-list')[0].classList.remove('responsive')};
