@@ -16,11 +16,12 @@ function navToggle() {
 
 function isTodayFriday (day) {
     //(day == 5) ? document.getElementById('friday-deal').classList.toggle("hidden"): console.log(day, 'not friday');
-    if (day == 5) {
-        document.getElementById('friday-deal').classList.remove("hidden");
+    if (day != 5) {
         console.log("today is friday");
+        document.getElementById('friday-deal').classList.toggle("hidden");
     } else {
         console.log(day, 'not friday');
+        
     }
 }
 
