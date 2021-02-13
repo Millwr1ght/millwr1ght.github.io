@@ -181,7 +181,8 @@ main {
     opacity: .7;
 }
 
-.forecast-box {}
+
+/*.forecast-box {}*/
 
 .forecast-grid {
     display: grid;
