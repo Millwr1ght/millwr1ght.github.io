@@ -1,12 +1,8 @@
-const images = document.querySelectorAll("[data-src]");
+const images = document.querySelectorAll("img[data-src]");
 
 function preloadImage(img) {
-    const src = img.getAttribute('data-src');
-    if (!src) {
-        return;
-    } 
-
-    img.src = src;
+    img.setAttribute('src', img.getAttribute('data-src'));
+    img.onload = () => {img.removeAttribute('data-src');};
 }
 
 const imgOptions = {
