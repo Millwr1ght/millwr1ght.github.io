@@ -8,6 +8,8 @@ h1 {
 
 main {
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 400px);
+    grid-template-areas: "img0" "img1" "img2" "img3" "img4";
     justify-content: center;
     align-items: center;
     margin: 0 auto;
