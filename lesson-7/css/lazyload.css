@@ -6,7 +6,7 @@ h1 {
     font-family: 'Lora', 'Times New Roman', Times, serif;
 }
 
-main {
+body {
     grid-template-columns: 500px;
     grid-template-rows: repeat(5, 400px);
     grid-template-areas: "img0"
