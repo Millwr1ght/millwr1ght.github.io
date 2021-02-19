@@ -10,6 +10,7 @@ main {
     grid-template-columns: 500px;
     grid-template-rows: repeat(5, 400px);
     grid-template-areas: "img0" "img1" "img2" "img3" "img4";
+    grid-gap: 2em;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
