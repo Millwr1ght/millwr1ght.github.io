@@ -1,0 +1,14 @@
+html {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: 'Lora', 'Times New Roman', Times, serif;
+}
+
+main {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}

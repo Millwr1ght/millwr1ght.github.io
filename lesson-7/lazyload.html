@@ -10,15 +10,31 @@
 		content="Lazy picture loading">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/lazyload.css">
+    <script src="js/lazyload.js"></script>
 </head>
 
 <body>
     <h1>Lazy Loading of the five(5) images on my laptop</h1>
-    <img id="portrait" alt="man in red sweater" src="images/image_400x320.jpg">
-    <img id="sunset" alt="sunset in OC" src="images/sunset_300x400.jpg">
-    <img id="detroit" alt="nighttime in Detroit" src="images/detroit stock img_400x267.jpg">
-    <img id="sunrise" alt="sunrise in SF" src="images/sunrise-over-sf_400x225.jpg">
-    <img id="profile" alt="the only other image on my laptop" src="images/skaia_400x320.jpg">
+    <picture id="portrait">
+        <img src="https://via.placeholder.com/400x300.png?text=Placeholder+Image">
+        <!-- <img alt="man in red sweater" src="images/image_400x320.jpg"> -->
+    </picture>
+    <picture id="sunset">
+        <!-- <img alt="sunset in OC" src="images/sunset_300x400.jpg"> -->
+    </picture>
+    <picture id="detroit">
+        <!-- <img alt="nighttime in Detroit" src="images/detroit stock img_400x267.jpg"> -->
+    </picture>
+    <picture id="sunrise">
+        <!-- <img alt="sunrise in SF" src="images/sunrise-over-sf_400x225.jpg"> -->
+    </picture>
+    <picture id="profile">
+        <!-- <img alt="the only other image on my laptop" src="images/skaia_400x320.jpg"> -->
+    </picture>
+    
+    
+    
+    <script src="js/webfontload.js"></script>
 </body>
 
 </html>
