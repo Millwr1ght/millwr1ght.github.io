@@ -12,3 +12,8 @@ main {
     align-items: center;
     margin: 0 auto;
 }
+
+[data-src] {
+    min-width: 50px;
+    min-height: 50px;
+}
