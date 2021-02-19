@@ -1,0 +1,81 @@
+@media screen and (min-width: 640px) {
+
+    /* header */
+    header,
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .title-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* nav */
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5em;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+    .nav-icon {
+        display: none;
+    }
+
+    .nav-list li {
+        display: block;
+    }
+
+    /* main */
+    main,
+    footer {
+        max-width: 640px;
+    }
+
+    .hero-weather {
+        position: absolute;
+        top: 25px;
+        right: 50px;
+    }
+
+    .forecast-day {
+        padding: 0.5em;
+    }
+
+    .article-img {
+        float: right;
+        width: 50%;
+        padding: 1em;
+    }
+
+    .contact-img {
+        width: 50%;
+        padding: 1em;
+    }
+
+    .contact-paragraph {
+        display: block;
+        float: right;
+        padding: 1em;
+        font-size: 16px;
+    }
+}
