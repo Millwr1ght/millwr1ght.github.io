@@ -3,8 +3,9 @@ h1 {
 }
 
 body {
+    display: grid;
     grid-template-columns: 500px;
-    grid-template-rows: repeat(5, 400px);
+    grid-template-rows: 100 px repeat(5, 400px);
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -15,3 +16,11 @@ body {
     min-height: 50px;
 }
 */
+
+#portrait {
+    grid-column: 1;
+}
+#sunset {}
+#detroit {}
+#sunrise {}
+#profile {}
