@@ -254,7 +254,7 @@ main {
 .gallery-picture {
     margin: 0 auto;
     filter: blur(1);
-    transition: filter 0.25ms;
+    transition: filter 0.1ms;
     min-width: 200px;
     min-height: 150px;
 }
