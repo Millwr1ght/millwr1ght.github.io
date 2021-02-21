@@ -279,7 +279,6 @@ footer {
 .update {
     font-size: 14px;
     text-align: center;
-    padding: 0.5em;
-    margin: 1em auto;
+    margin: 0.25em auto;
     flex-direction: column;
 }
