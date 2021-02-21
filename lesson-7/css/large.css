@@ -19,7 +19,7 @@
         grid-gap: 0.5em;
     }
 
-    .gallery-picture:hover {
+    .gallery-card:hover {
         box-shadow: 0 0 50px #333;
     }
 }
