@@ -37,6 +37,7 @@
     .nav-menu {
         display: none;
     }
+
     .nav-icon {
         display: none;
     }
@@ -51,22 +52,26 @@
         max-width: 640px;
     }
 
+    /* hero-img-box */
     .hero-weather {
         position: absolute;
         top: 25px;
         right: 50px;
     }
 
+    /* five-day forecast */
     .forecast-day {
         padding: 0.5em;
     }
 
+    /* town article */
     .article-img {
         float: right;
         width: 50%;
         padding: 1em;
     }
 
+    /* contact info */
     .contact-img {
         width: 50%;
         padding: 1em;
@@ -78,4 +83,15 @@
         padding: 1em;
         font-size: 16px;
     }
+
+    /* gallery */
+    .gallery-box {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.5em;
+    }
+
+    .gallery-picture:hover {
+        box-shadow: none;
+    }
+
 }
