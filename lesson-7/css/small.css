@@ -253,7 +253,6 @@ main {
 
 .gallery-picture {
     margin: 0 auto;
-    width: 50%; /* change later? */
     filter: blur(1);
     transition: filter 0.25ms;
     min-width: 200px;

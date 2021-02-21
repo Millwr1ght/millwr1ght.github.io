@@ -16,7 +16,6 @@ if ('IntersectionObserver' in window) {
             }
         });
     });
-
     images.forEach((image) => {
         imgObserver.observe(image);
     }) 
