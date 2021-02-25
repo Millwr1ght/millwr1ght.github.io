@@ -16,7 +16,7 @@ table {
     text-align: center;
     width: 300px;
     border-collapse: collapse;
-    box-shadow: 1em 1em 5px var(--color-secondary);
+    box-shadow: 1em 1em 0.5em var(--color-secondary);
 }
 table,
 table th,
@@ -52,5 +52,5 @@ tfoot {
 }
 
 .goal {
-    color: var(--color-secondary);
+    background-color: var(--color-secondary);
 }
