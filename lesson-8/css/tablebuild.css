@@ -16,13 +16,13 @@ table {
     text-align: center;
     width: 300px;
     border-collapse: collapse;
-    box-shadow: 0.5em 0.5em 0.5em var(--color-secondary);
-    padding: 4px;
+    box-shadow: 4px 4px 8px var(--color-secondary);
 }
 table,
 table th,
 table td {
   border: solid 1px #ccc;
+  padding: 4px;
 }
 
 tbody tr:nth-child(even) {
