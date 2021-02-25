@@ -9,8 +9,13 @@
     --main-gray: #000000;
 }
 
-body {
+table {
     font-family: Ubuntu, sans-serif;
+    text-align: center;
+    width: 300px;
+    border-collapse: collapse;
+    border: 2px solid black;
+    box-shadow: 1em 1em 5px var(--color-secondary);
 }
 
 tbody tr:nth-child(even) {
