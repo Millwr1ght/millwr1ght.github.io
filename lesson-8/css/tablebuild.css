@@ -50,3 +50,7 @@ tfoot {
     background-color: var(--color-primary);
     font-size: 14px;
 }
+
+.goal {
+    color: var(--color-secondary);
+}
