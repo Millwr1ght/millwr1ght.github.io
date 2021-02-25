@@ -14,7 +14,7 @@ html {
 
 table {
     text-align: center;
-    width: 300px;
+    /*width: 275px*/
     border-collapse: collapse;
     box-shadow: 4px 4px 8px var(--color-secondary);
 }
