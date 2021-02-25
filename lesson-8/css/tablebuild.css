@@ -22,10 +22,10 @@ thead:first-child {
 }
 
 
-tr:nth-child(even) {
+tbody tr:nth-child(even) {
     background-color: var(--color-even);
 }
-tr:nth-child(odd) {
+tbody tr:nth-child(odd) {
    background-color: var(--color-odd);
 }
 
