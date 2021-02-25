@@ -17,6 +17,7 @@ table {
     width: 300px;
     border-collapse: collapse;
     box-shadow: 0.5em 0.5em 0.5em var(--color-secondary);
+    padding: 4px;
 }
 table,
 table th,
@@ -37,9 +38,6 @@ thead {
     font-size: 16px;
 }
 
-strong {
-    color: white;
-}
 
 thead:first-child {
     background-color: var(--color-primary);
@@ -53,4 +51,5 @@ tfoot {
 
 .goal {
     background-color: var(--color-secondary);
+    color: white;
 }
