@@ -13,15 +13,6 @@ body {
     font-family: Ubuntu, sans-serif;
 }
 
-thead {
-    background-color: var(--color-secondary);
-}
-
-thead:first-child {
-    background-color: var(--color-primary);
-}
-
-
 tbody tr:nth-child(even) {
     background-color: var(--color-even);
 }
@@ -29,6 +20,17 @@ tbody tr:nth-child(odd) {
    background-color: var(--color-odd);
 }
 
+thead {
+    background-color: var(--color-secondary);
+    
+}
+
+thead:first-child {
+    background-color: var(--color-primary);
+    font-size: 20px;
+}
+
 tfoot {
     background-color: var(--color-primary);
+    font-size: 14px;
 }
