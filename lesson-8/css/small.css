@@ -287,6 +287,7 @@ fieldset {
 
 form label {
     margin-top: 0.75em;
+    padding-top: 1em;
 }
 
 form label input,
