@@ -290,6 +290,7 @@ form label input, select, option {
     padding: 0.5em;
     width: 100%;
     max-width: 400px;
+    margin-top: 0.75em;
 }
 
 form label.radio {
