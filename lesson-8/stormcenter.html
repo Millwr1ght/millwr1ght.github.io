@@ -42,96 +42,104 @@
 
         <section class="storm-form content">
             <form method="GET" action="thank-you.html" id="stormform">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                        <label for="fullname">
+                        Full Name*
+                        <input type="text" name="fullname" id="fullname" pattern="[A-Za-z]{5,}" required>
+                    </label>
+                    
+                    <label for="email">
+                        Email
+                        <input type="email" name="email" id="email" placeholder="user@email.org">
+                    </label>
+                                
+                    <label for="phone">
+                        Phone Number*
+                        <input type="tel" name="phone" id="phone" placeholder="###-###-####" required>
+                    </label>
                 
-                <label for="fullname">
-                    Full Name
-                    <input type="text" name="fullname" id="fullname" pattern="[A-Za-z]{5,}" required>
-                </label>
+                    <label for="zipcode">
+                        Zip Code*
+                        <input type="number" name="zipcode" id="zipcode" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep" required>
+                    </label>
+                </fieldset>
                 
-                <label for="email">
-                    Email
-                    <input type="email" name="email" id="email" placeholder="user@email.org">
-                </label>
-                               
-                <label for="phone">
-                    Phone Number
-                    <input type="tel" name="phone" id="phone" placeholder="###-###-####" required>
-                </label>
-            
-                <label for="zipcode">
-                    Zip Code
-                    <input type="number" name="zipcode" id="zipcode" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep" required>
-                </label>
-                
-                <label for="date">
-                    Day this storm was sighted
-                    <input type="date" name="date" id="date">
-                </label>                
+                <fieldset>
+                    <legend>Tell us about the storm sighted!</legend>
+                        <label for="date">
+                        Day this storm was sighted
+                        <input type="date" name="date" id="date">
+                    </label>                
 
-                <label for="storm-type">
-                    Type of storm
-                    <input list="storm-types" name="storm-type" id="storm-type">
-                    <datalist id="storm-types">
-                        <option value="Flash Flood">
-                        <option value="Thunderstorm">
-                        <option value="Tornado">
-                        <option value="Hurricane">
-                        <option value="Hail">
-                        <option value="Earthquake">
-                        <option value="Other">
-                    </datalist>
-                </label>
+                    <label for="storm-type">
+                        Type of storm
+                        <input list="storm-types" name="storm-type" id="storm-type">
+                        <datalist id="storm-types">
+                            <option value="Flash Flood">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                            <option value="Hurricane">
+                            <option value="Hail">
+                            <option value="Earthquake">
+                            <option value="Other">
+                        </datalist>
+                    </label>
 
-                <label for="severity">
-                    Storm severity:
-                    <input type="range" name="severity" id="severity" value="5" min="1" max="10" step="1" list="tickmarks"  oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
-                    <span id="severity-output">5</span>
-                    <datalist id="tickmarks">
-                        <option value="1">
-                        <option value="2">
-                        <option value="3">
-                        <option value="4">
-                        <option value="5">
-                        <option value="6">
-                        <option value="7">
-                        <option value="8">
-                        <option value="9">
-                        <option value="10">
-                    </datalist>
-                </label>
-                
-                <label for="storm-region">
-                    Where is this storm?
-                    <select name="storm-region" id="storm-region">
-                        <option disabled>Select Region...</option>
-                        <option value="Preston">Preston</option>
-                        <option value="Soda Springs">Soda Springs</option>
-                        <option value="Fish Haven">Fish Haven</option>
-                    </select>
-                </label>
-                
-                <ul id="danger-list">
-                    <label for="in-danger">Are you in danger?</label>
-                    <li>
-                        <label for="danger-yes">Yes</label>
-                        <input type="radio" name="in-danger" id="danger-yes" value="Yes">
-                    </li>
-                    <li>
-                        <label for="danger-maybe">Maybe</label>
-                        <input type="radio" name="in-danger" id="danger-maybe" value="Maybe">
-                    </li>
-                    <li>
-                        <label for="danger-no">No</label>
-                        <input type="radio" name="in-danger" id="danger-no" value="No">
-                    </li>
-                </ul>
+                    <label for="severity">
+                        Storm severity:
+                        <input type="range" name="severity" id="severity" value="5" min="1" max="10" step="1" list="tickmarks"  oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                        <span id="severity-output">5</span>
+                        <datalist id="tickmarks">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist>
+                    </label>
+                    
+                    <label for="storm-region">
+                        Where is this storm?
+                        <select name="storm-region" id="storm-region">
+                            <option disabled>Select Region...</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    </label>
+                    
+                    <ul id="danger-list">
+                        <label for="in-danger">Are you in danger?</label>
+                        <li>
+                            <label for="danger-yes">Yes</label>
+                            <input type="radio" name="in-danger" id="danger-yes" value="Yes">
+                        </li>
+                        <li>
+                            <label for="danger-maybe">Maybe</label>
+                            <input type="radio" name="in-danger" id="danger-maybe" value="Maybe">
+                        </li>
+                        <li>
+                            <label for="danger-no">No</label>
+                            <input type="radio" name="in-danger" id="danger-no" value="No">
+                        </li>
+                    </ul>
+                </fieldset>
 
-                <label for="comments">
-                    Additional information or comments:
-                    <input type="textarea" name="comments" id="comments">
-                </label>
+                <fieldset>
+                    <legend>Anything else?</legend>
+                    <label for="comments">
+                        Additional information or comments
+                        <input type="textarea" name="comments" id="comments">
+                    </label>
+                </fieldset>
                 
-                <input type="submit" id="submit" value="Submit">
+                <input type="submit" id="submit" value="Report Storm">
             </form>
         </section>
     </main>
