@@ -292,7 +292,15 @@ form label input, select, option {
     max-width: 400px;
 }
 
+form label.radio {
+    display: block;
+    padding: .25em .75em;
+    cursor: pointer;
+}
 
+label.radio input {
+    margin: .25em 1em;
+}
 
 
 
