@@ -10,7 +10,7 @@ yearSpan.innerHTML = year;
 
 //nav
 function navToggle() {
-    document.getElementById('top-nav-list').classList.toggle("responsive");
+    document.getElementById('top-nav').classList.toggle("responsive");
     console.log('toggled');
 }
 
