@@ -107,7 +107,8 @@ header>h2 {
     background-color: var(--nav-background-color);
     text-align: center;
     width: 100%;
-    box-shadow: 0 2px 15px var(--main-gray);
+    padding: 0.5em;
+    box-shadow: 0 0 15px var(--main-gray);
 }
 
 .nav-list {
