@@ -270,10 +270,14 @@ main {
 }
 
 /*Stormcentre--------------------------------------------*/
-#stormform button, input, select, textarea {
+#stormform label, button, input, select, textarea {
     font-family: inherit;
     font-size: 100%;
-  }
+}
+
+fieldset {
+    border-color: var(--main-gray);
+}
 
 /* footer */
 footer {
