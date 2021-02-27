@@ -1,0 +1,284 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap');
+
+:root {
+    /* color scheme */
+    --main-white: #f0f0f0;
+    --color-primary: #185F8C;
+    --color-secondary: #2BB6A8;
+    --color-accent1: #DE172E;
+    --color-accent2: #FF9F1C;
+    --main-gray: #011627;
+
+    /* color usage */
+    --headline-color-on-white: black;
+    --headline-color-on-color: black;
+    --paragraph-color-on-white: black;
+    --paragraph-color-on-color: black;
+    --paragraph-background-color: var(--color-secondary);
+    --nav-link-color: var(--color-accent2);
+    --nav-link-color2: var(--main-white);
+    --nav-background-color: var(--color-primary);
+    --nav-hover-link-color: var(--main-white);
+    --nav-hover-background-color: var(--color-accent2);
+
+    /* typography */
+    --heading-font: 'Lora', 'Times New Roman', serif;
+    --paragraph-font: "Open Sans", Arial, sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    background-color: var(--color-primary);
+    font-family: var(--paragraph-font);
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--heading-font);
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    /* no one likes bullet points */
+}
+
+a {
+    text-decoration: none;
+    /* no one likes underlined links*/
+    color: var(--main-gray);
+}
+
+.hidden {
+    display: none;
+}
+
+/* friday deals box ---------------------------------------------------------------------------*/
+#friday-deal {
+    width: 100%;
+    display: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.friday {
+    display: block;
+}
+
+/* header styles------------------------------------------------------------------------------ */
+
+header,
+footer {
+    color: var(--paragraph-color-on-color);
+    background-color: var(--paragraph-background-color);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header>h1,
+header>h2 {
+    color: var(--headline-color-on-color);
+}
+
+.header-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* nav ------------------------------------------------------------------------*/
+#top-nav {
+    background-color: var(--nav-background-color);
+    line-height: 3em;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+}
+
+.nav-menu {
+    display: block;
+}
+
+.nav-icon {
+    border: none;
+    background: none;
+    display: block;
+}
+
+.nav-list li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+.nav-list li .active:link,
+.nav-list li .active:visited {
+    color: var(--nav-link-color2);
+}
+
+nav a {
+    justify-content: space-around;
+    padding: 1em;
+    min-width: 70px;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.logo {
+    width: 100px;
+}
+
+
+/* main general  -------------------------------------------------------------*/
+
+main {
+    background-color: var(--main-white);
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+    padding: 1em;
+}
+
+.content {
+    padding: 1.5em;
+    border: 1px dotted var(--main-gray);
+}
+
+/* hero image */
+.hero-box {
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.hero-weather {
+    display: block;
+    background: var(--color-primary);
+    border: 1px solid #000;
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #111;
+    opacity: .7;
+}
+
+
+/* five-day forcast */
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 3px;
+}
+
+.forecast-day {
+    border: 1px dotted var(--main-gray);
+}
+
+/* town article */
+.article-img {
+    float: none;
+}
+
+.article-heading {
+    text-align: center;
+}
+
+.article-box p {
+    display: block;
+}
+
+/* contact info box*/
+.contact-box {
+    padding: 1em;
+}
+
+.contact-heading {
+    text-align: center;
+}
+
+.contact-img {
+    width: 50%;
+
+}
+
+.contact-paragraph {
+    display: block;
+    text-align: center;
+}
+
+/* gallery */
+.gallery-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1em;
+    border: 0.25em solid var(--main-gray);
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-card {
+    padding: 0.5em;
+    border: 2px dotted var(--color-primary);
+    margin: 0 auto;
+}
+
+.gallery-picture {
+    margin: 0 auto;
+    filter: blur(1);
+    transition: filter 0.1ms;
+    min-width: 200px;
+    min-height: 150px;
+}
+
+.gallery-paragraph {
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 0;
+    font-size: 14px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.copy-box,
+.update {
+    font-size: 14px;
+    text-align: center;
+    margin: 0.25em auto;
+    flex-direction: column;
+}

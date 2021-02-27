@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KWDD 230 Weather | Gallery</title>
+    <meta name="description" content="Weather, whether you like it or not">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/small.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css" media="(min-width: 640px and max-width: 960px)">
+    <link rel="stylesheet" type="text/css" href="css/large.css" media="">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="header-box">
+            <img class="logo" alt="KWDD Weather" src="images/iconfinder_sun.png">
+            <div class="title-box">
+                <h1>KWDD 230 Weather</h1>
+                <p>The latest updates for weather news for southeastern Idaho</p>
+            </div>
+        </div>
+
+
+        <nav id="top-nav">
+            <ul class="nav-list">
+                <li class="nav-menu"><button class="nav-icon" onclick="navToggle()"><img id="menu-icon"
+                            src="images/icons8-menu.svg" alt="nav-icon"></button></li>
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/lesson5/preston-5.html">Preston</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Soda Springs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Fish Haven</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Storm Center</a></li>
+                <li class="nav-item"><a class="nav-link" href="/lesson-7/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="storm-form content">
+            <form action="thank-you.html" id="storm-center">
+                <input type="text" name="fullname" id="fullname" pattern="[A-Za-z]{5,}" required>
+                <input type="email" name="email" id="email" placeholder="">
+                <input type="tel" name="phone" id="phone" required>
+                <input type="number" name="zipcode" id="zipcode" required>
+                <input type="date" name="date" id="date">
+                <input list="storm-types" name="type" id="type">
+                <datalist id="storm-types">
+                    <option value="Flash Flood"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Hail"></option>
+                    <option value="Earthquake"></option>
+                </datalist>
+                
+                <input type="range" name="severity" id="severity" min="1" max="10">
+                <label for="severity" id="severity-output"></label>
+                <select name="storm-region" id="storm-region">
+                    <option disabled>Select Region...</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Soda Springs">Soda Springs</option>
+                    <option value="Fish Haven">Fish Haven</option>
+                </select>
+                
+                <ul id="danger-list">
+                    <label for="in-danger">Are you in danger?</label>
+                    <li>
+                        <label for="danger-yes">Yes</label>
+                        <input type="radio" name="in-danger" id="danger-yes" value="Yes">
+                    </li>
+                    <li>
+                        <label for="danger-maybe">Maybe</label>
+                        <input type="radio" name="in-danger" id="danger-maybe" value="Maybe">
+                    </li>
+                    <li>
+                        <label for="danger-no">No</label>
+                        <input type="radio" name="in-danger" id="danger-no" value="No">
+                    </li>
+                </ul>
+
+                <label for="comments">Additional information or comments:</label>
+                <input type="textarea" name="comments" id="comments">
+
+                <input type="submit" id="submit" value="Submit">
+            </form>
+            <!--
+
+Each field element should have an appropriate name attribute
+Each field element including the textarea should be encased in a <label> tag to support accessibility
+
+
+            -->
+        </section>
+    </main>
+
+    <footer>
+        <p class="copy-box">&copy; &nbsp;<span id="thisYear"></span> | KWDD 230 | Nathan Johnston</p>
+        <p class="update"><span id="lastUpdated"></span></p>
+    </footer>
+
+    <!-- scripts to run before rendering has completed-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/stormcenter.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>
+
+</html>
