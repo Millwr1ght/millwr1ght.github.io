@@ -114,6 +114,7 @@ header>h2 {
     list-style-type: none;
     margin: auto;
     padding: 0;
+    display: block;
 }
 
 .nav-menu {
@@ -130,13 +131,8 @@ header>h2 {
     display: none;
 }
 
-.responsive li {
+.nav-list .responsive li {
     display: block;
-}
-
-.nav-list li .active:link,
-.nav-list li .active:visited {
-    color: var(--nav-link-color2);
 }
 
 nav a {
@@ -148,6 +144,11 @@ nav a {
 nav a:link,
 nav a:visited {
     color: var(--nav-link-color);
+}
+
+.nav-list li .active:link,
+.nav-list li .active:visited {
+    color: var(--nav-link-color2);
 }
 
 nav a:hover {
