@@ -151,7 +151,7 @@ nav a:visited {
     color: var(--nav-link-color2);
 }
 
-nav a:hover {
+nav li:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }

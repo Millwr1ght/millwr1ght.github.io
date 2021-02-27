@@ -47,6 +47,12 @@
         display: none;
     }
 
+    nav a:hover {
+        color: var(--nav-hover-link-color);
+        background-color: var(--nav-hover-background-color);
+    }
+
+
     /* main */
     main,
     footer {
