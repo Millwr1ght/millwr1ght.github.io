@@ -6,20 +6,15 @@ let d = new Date();
 let today = d.getDay();
 let year = d.getFullYear()
 const yearSpan = document.getElementById('thisYear');
-yearSpan.textContent = year;
+yearSpan.innerHTML = year;
 
 //nav
 function navToggle() {
-    document.getElementById('top-nav').classList.toggle("responsive");
+    document.getElementById('top-nav-list').classList.toggle("responsive");
     console.log('toggled');
 }
 
 //severity slider
-const severitySlider = document.getElementById('#severity');
-const severityLabel = document.getElementById('#severity-output');
-
-severityLabel.textContent = severitySlider.value;
-
-severitySlider.addEventListener('input', function() {
-  severityLabel.textContent = severitySlider.value;
-});
+function adjustSeverity(value) {
+  severityLabel.innerHTML = value;
+};
