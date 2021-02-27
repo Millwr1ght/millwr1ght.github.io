@@ -107,6 +107,7 @@ header>h2 {
     background-color: var(--nav-background-color);
     text-align: center;
     width: 100%;
+    box-shadow: 0 2px 15px var(--main-gray);
 }
 
 .nav-list {
@@ -116,21 +117,20 @@ header>h2 {
     display: block;
 }
 
-.nav-menu {
+.nav-list li:first-child {
     display: block;
 }
 
 .nav-icon {
     border: none;
     background: none;
-    display: block;
 }
 
 .nav-list li {
     display: none;
 }
 
-.nav-list .responsive li {
+.responsive li {
     display: block;
 }
 

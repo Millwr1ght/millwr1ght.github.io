@@ -9,12 +9,18 @@ const yearSpan = document.getElementById('thisYear');
 yearSpan.innerHTML = year;
 
 //nav
+const navButton = document.getElementById('nav-button');
+const topNavList = document.getElementById('top-nav-list');
+
+navButton.addEventListener('click', () => {topNavList.classList.toggle('responsive')}, false);
+window.onresize = () => {if (window.innerWidth > 640) topNavList.classList.remove('responsive')};
+/* 
 function navToggle() {
     document.getElementById('top-nav-list').classList.toggle("responsive");
     console.log('toggled');
-}
+} */
 
 //severity slider
 function adjustSeverity(value) {
-  severityLabel.innerHTML = value;
+    severityLabel.innerHTML = value;
 };

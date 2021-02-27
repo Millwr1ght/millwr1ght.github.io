@@ -38,12 +38,13 @@
         display: none;
     }
 
-    .nav-icon {
-        display: none;
-    }
-
     .nav-list li {
         display: block;
+        flex: 1 1 auto;
+    }
+
+    .nav-list li:first-child {
+        display: none;
     }
 
     /* main */
