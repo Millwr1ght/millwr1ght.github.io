@@ -42,12 +42,24 @@
 
         <section class="storm-form content">
             <form action="thank-you.html" id="storm-center">
+                
+                <label for="fullname">Full Name</label>
                 <input type="text" name="fullname" id="fullname" pattern="[A-Za-z]{5,}" required>
+                
+                <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="">
+                
+                <label for="phone">Phone Number</label>
                 <input type="tel" name="phone" id="phone" required>
+
+                <label for="zipcode">Zip Code</label>
                 <input type="number" name="zipcode" id="zipcode" required>
+
+                <label for="date">Day this storm was sighted</label>
                 <input type="date" name="date" id="date">
-                <input list="storm-types" name="type" id="type">
+
+                <label for="storm-type">Type of storm</label>
+                <input list="storm-types" name="storm-type" id="storm-type">
                 <datalist id="storm-types">
                     <option value="Flash Flood"></option>
                     <option value="Thunderstorm"></option>
@@ -55,10 +67,15 @@
                     <option value="Hurricane"></option>
                     <option value="Hail"></option>
                     <option value="Earthquake"></option>
+                    <option value="Other"></option>
                 </datalist>
-                
+
+
+                <label for="severity">Storm severity:<span id="severity-output"></span></label>
                 <input type="range" name="severity" id="severity" min="1" max="10">
-                <label for="severity" id="severity-output"></label>
+                
+                
+                <label for="storm-region">Where is this storm?</label>
                 <select name="storm-region" id="storm-region">
                     <option disabled>Select Region...</option>
                     <option value="Preston">Preston</option>
@@ -89,8 +106,6 @@
             </form>
             <!--
 
-Each field element should have an appropriate name attribute
-Each field element including the textarea should be encased in a <label> tag to support accessibility
 
 
             -->
