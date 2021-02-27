@@ -105,7 +105,6 @@ header>h2 {
 /* nav ---------------------------------------------*/
 #top-nav {
     background-color: var(--nav-background-color);
-    line-height: 3em;
     text-align: center;
     width: 100%;
 }
