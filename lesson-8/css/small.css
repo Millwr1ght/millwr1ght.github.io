@@ -270,13 +270,35 @@ main {
 }
 
 /*Stormcentre--------------------------------------------*/
-#stormform label, button, input, select, textarea {
+form label,
+form button,
+form input,
+form select,
+form textarea {
     font-family: inherit;
     font-size: 100%;
 }
 
 fieldset {
-    border-color: var(--main-gray);
+    border-color: (--main-gray);
+    padding: 1em;
+}
+
+form label input, select, option {
+    display: block;
+    padding: 0.5em;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+
+
+
+textarea {
+    width: 100%;
+    max-width: 50rem;
+    min-height: 10rem;
 }
 
 /* footer */
