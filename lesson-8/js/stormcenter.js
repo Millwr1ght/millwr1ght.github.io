@@ -22,5 +22,5 @@ function navToggle() {
 
 //severity slider
 function adjustSeverity(value) {
-    severityLabel.innerHTML = value;
+    document.getElementById('severity-output').innerHTML = value;
 };
