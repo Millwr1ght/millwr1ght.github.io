@@ -278,6 +278,13 @@ form select,
 form textarea {
     font-family: inherit;
     font-size: 100%;
+}
+
+form label.not-radio,
+form button,
+form input,
+form select,
+form textarea {
     width: 250px;
     padding: 0;
     margin: 0;
