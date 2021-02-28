@@ -280,12 +280,18 @@ form textarea {
     font-size: 100%;
 }
 
+input:focus {
+    box-shadow: 0 0 10px #bbb;
+}
+
 fieldset {
     border-color: (--main-gray);
+    background-color: #eee;
     padding: 1em;
 }
 
 form label {
+    width: 200px;
     margin-top: 0.75em;
     padding-top: 1em;
 }
