@@ -299,6 +299,10 @@ form label option {
     max-width: 400px;
 }
 
+#danger-list {
+    padding-inline-start: 0px;
+}
+
 form label.radio {
     display: block;
     padding: .25em .75em;
