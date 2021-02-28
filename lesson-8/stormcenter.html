@@ -45,23 +45,19 @@
             <form method="GET" action="thank-you.html" id="stormform">
                 <fieldset>
                     <legend>Contact Information</legend>
-                    <label for="fullname">
-                        Full Name*
+                    <label for="fullname">Full Name*
                         <input type="text" name="fullname" id="fullname" pattern="[A-Za-z]{5,}" required>
                     </label>
 
-                    <label for="email">
-                        Email
+                    <label for="email">Email
                         <input type="email" name="email" id="email" placeholder="user@email.org">
                     </label>
 
-                    <label for="phone">
-                        Phone Number*
+                    <label for="phone">Phone Number*
                         <input type="tel" name="phone" id="phone" placeholder="###-###-####" required>
                     </label>
 
-                    <label for="zipcode">
-                        Zip Code*
+                    <label for="zipcode">Zip Code*
                         <input type="number" name="zipcode" id="zipcode" pattern="(\d{5}([\-]\d{4})?)"
                             autocomplete="shipping postal-codep" required>
                     </label>
@@ -69,13 +65,11 @@
 
                 <fieldset>
                     <legend>Tell us about the storm sighted!</legend>
-                    <label for="date">
-                        Day this storm was sighted
+                    <label for="date">Day this storm was sighted
                         <input type="date" name="date" id="date">
                     </label>
 
-                    <label for="storm-type">
-                        Type of storm
+                    <label for="storm-type">Type of storm
                         <input list="storm-types" name="storm-type" id="storm-type">
                         <datalist id="storm-types">
                             <option value="Flash Flood">
@@ -88,8 +82,7 @@
                         </datalist>
                     </label>
 
-                    <label for="severity">
-                        Storm severity:
+                    <label for="severity">Storm severity:
                         <input type="range" name="severity" id="severity" value="5" min="1" max="10" step="1"
                             list="tickmarks" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
                         <span id="severity-output">5</span>
@@ -107,9 +100,8 @@
                         </datalist>
                     </label>
 
-                    <label for="storm-region">
-                        Where is this storm?
-                        <select name="storm-region" id="storm-region">
+                    <label for="storm-region">Where is this storm?
+                        <select name="storm-region" id="storm-region" value="Select Region..">
                             <option disabled>Select Region...</option>
                             <option value="Preston">Preston</option>
                             <option value="Soda Springs">Soda Springs</option>
