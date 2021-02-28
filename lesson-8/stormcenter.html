@@ -82,23 +82,26 @@
                         </datalist>
                     </label>
 
-                    <label for="severity">Storm severity:
-                        <input type="range" name="severity" id="severity" value="5" min="1" max="10" step="1"
-                            list="tickmarks" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
-                        <span id="severity-output">5</span>
-                        <datalist id="tickmarks">
-                            <option value="1">
-                            <option value="2">
-                            <option value="3">
-                            <option value="4">
-                            <option value="5">
-                            <option value="6">
-                            <option value="7">
-                            <option value="8">
-                            <option value="9">
-                            <option value="10">
-                        </datalist>
-                    </label>
+                    <div>
+                        <label for="severity">Storm severity:
+                            <input type="range" name="severity" id="severity" value="5" min="1" max="10" step="1"
+                                list="tickmarks" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                            <span id="severity-output">5</span>
+                            <datalist id="tickmarks">
+                                <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5">
+                                <option value="6">
+                                <option value="7">
+                                <option value="8">
+                                <option value="9">
+                                <option value="10">
+                            </datalist>
+                        </label>
+                    </div>
+                    
 
                     <label for="storm-region">Where is this storm?
                         <select name="storm-region" id="storm-region" value="Select Region..">
