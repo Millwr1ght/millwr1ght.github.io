@@ -102,5 +102,8 @@
     }
 
     /*storm center form*/
-
+    form {
+        margin: 0 auto;
+        max-width: 640px;
+    }
 }
