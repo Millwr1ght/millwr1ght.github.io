@@ -21,10 +21,13 @@ h1,h2 {
 
 #cards section {
     border: lightseagreen, 2px, solid;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 #cards section p {
-
+    margin: 1rem auto;
 }
 
 #cards section img {
