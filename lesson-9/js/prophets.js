@@ -34,7 +34,8 @@ fetch(requestURL)
 
       //image 
       let image = document.createElement('img');
-      image.setAttribute('src', prophets[i].imageurl).setAttribute('alt', prophets[i].name + prophets[i].lastname + ' - ' + prophets[i].order);
+      image.setAttribute('src', prophets[i].imageurl);
+      image.setAttribute('alt', prophets[i].name + prophets[i].lastname + ' - ' + prophets[i].order);
       card.appendChild(image);
 
       //add to the DOM
