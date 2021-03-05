@@ -40,6 +40,5 @@ fetch(requestURL)
       //add to the DOM
       document.getElementById('cards').appendChild(card);
 
-    });
-
+    };
   });
