@@ -1,15 +1,16 @@
 body {
-    margin: 0 auto;
+    margin: 0;
     font-family: Verdana, Tahoma, sans-serif;
     background-color: #f0ffff;
 }
 
 main {
     margin: 0 auto;
+    padding: 1rem;
 }
 
 h1,h2 {
-
+    color: lightseagreen;
 }
 
 #cards {
@@ -19,7 +20,7 @@ h1,h2 {
 }
 
 #cards section {
-
+    border: lightseagreen, 2px, solid;
 }
 
 #cards section p {
@@ -27,14 +28,12 @@ h1,h2 {
 }
 
 #cards section img {
-
+    box-shadow: #ccc;
 }
 
 header,
 footer {
     text-align: center;
-    background-color: blue;
-    color: white;
 }
 
 /* medium */
