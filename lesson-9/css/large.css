@@ -1,0 +1,27 @@
+@media screen and (min-width: 961px) {
+
+    .logo {
+        width: 150px;
+    }
+
+    main,
+    footer {
+        max-width: 960px;
+    }
+
+    .contact-paragraph {
+        font-size: 20px;
+    }
+
+    /* gallery */
+    .gallery-box {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.5em;
+    }
+
+    .gallery-card:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+    /*storm center form*/
+}

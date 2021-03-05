@@ -1,0 +1,61 @@
+body {
+    margin: 0 auto;
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: #f0ffff;
+}
+
+main {
+    margin: 0 auto;
+}
+
+h1,h2 {
+
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    box-shadow: #ccc;
+}
+
+#cards section {
+
+}
+
+#cards section p {
+
+}
+
+#cards section img {
+
+}
+
+header,
+footer {
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+/* medium */
+@media screen and (min-width: 640px) {
+    main {
+        max-width: 480px;
+    }
+    
+    #cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+    }
+}
+
+/* large */
+@media screen and (min-width: 1080px) {
+    main {
+        max-width: 960px;
+      }
+    #cards {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+    }
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+
+:root {
+    /* color scheme */
+    --main-white: #ffffff;
+    --color-odd: #e7f0ed;
+    --color-even: #e7ffed;
+    --color-secondary: #628ca6;
+    --color-primary: #7fb9c2;
+    --main-gray: #000000;
+}
+
+html {
+    font-family: "Ubuntu", sans-serif;
+}
+
+table {
+    text-align: center;
+    /*width: 275px*/
+    border-collapse: collapse;
+    box-shadow: 4px 4px 8px var(--color-secondary);
+}
+
+table,
+table th,
+table td {
+    border: solid 1px #ccc;
+    padding: 6px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--color-even);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--color-odd);
+}
+
+thead {
+    background-color: var(--color-secondary);
+    font-size: 16px;
+}
+
+
+thead:first-child {
+    background-color: var(--color-primary);
+    font-size: 20px;
+}
+
+tfoot {
+    background-color: var(--color-primary);
+    font-size: 14px;
+}
+
+.goal {
+    background-color: var(--color-secondary);
+    color: white;
+}
