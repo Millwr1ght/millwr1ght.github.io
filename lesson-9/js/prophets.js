@@ -12,7 +12,7 @@ window.onload(
       console.table(jsonObject);  // temporary checking for valid response and data parsing
       const prophets = jsonObject['prophets'];
       //loop over each element in the "meat" of the response
-      prophets.forEach(prophet => {
+      prophets.forEach((prophet) => {
           //build the HTML of a prophet card using the createElement(), textContent(), and appendChild() methods
           let card = document.createElement('section');
           let h2 = document.createElement('h2');
