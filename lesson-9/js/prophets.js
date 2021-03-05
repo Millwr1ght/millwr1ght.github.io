@@ -37,7 +37,7 @@ window.onload(
           card.appendChild(image);
 
           //add to the DOM
-          document.querySelector('div.cards').appendChild(card);
+          document.getElementById('cards').appendChild(card);
       
       });
 
