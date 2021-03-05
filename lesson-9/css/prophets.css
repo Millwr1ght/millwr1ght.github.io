@@ -9,7 +9,8 @@ main {
     padding: 1rem;
 }
 
-h1,h2 {
+h1,
+h2 {
     color: lightseagreen;
 }
 
@@ -17,6 +18,7 @@ h1,h2 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     box-shadow: #ccc;
+    background-color: lightskyblue;
 }
 
 #cards section {
@@ -50,8 +52,9 @@ footer {
     #cards section img {
         max-width: 75%;
     }
-    
+
     #cards {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 0.5rem;
     }
@@ -61,8 +64,10 @@ footer {
 @media screen and (min-width: 1080px) {
     main {
         max-width: 960px;
-      }
+    }
+
     #cards {
+        display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 1rem;
     }
