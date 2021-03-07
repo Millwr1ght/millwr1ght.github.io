@@ -38,6 +38,7 @@ fetch(requestURL)
             let townCard = document.createElement('article');
             townCard.setAttribute('id', `${town.name}`);
             townCard.setAttribute('class', 'town-card');
+            townCard.setAttribute('class', 'content');
 
             //town name
             let h2 = document.createElement('h2');
