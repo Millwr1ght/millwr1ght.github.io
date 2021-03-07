@@ -33,8 +33,9 @@ fetch(requestURL)
         let town = towns[i];
         if (KWDDtowns.includes(town)) {
             //create town card
-            let townCard = document.createElement('section');
+            let townCard = document.createElement('article');
             townCard.setAttribute('id', town.name);
+            townCard.setAttribute('class', 'town-card');
 
             //town name
             let h2 = document.createElement('h2');
@@ -62,7 +63,7 @@ fetch(requestURL)
             townCard.appendChild(rainfall);
 
             //add to the DOM
-            document.getElementById('cards').appendChild(card);
+            document.getElementById('town-cards').appendChild(card);
         
         }
     };

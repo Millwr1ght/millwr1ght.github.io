@@ -347,8 +347,16 @@ footer {
 }
 
 /* home page --------------------*/
-section {
+
+#town-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
     max-width: 600px;
     text-align: center;
     margin: .5rem auto;
+    display: flex;
+	flex-direction: row;
 }
