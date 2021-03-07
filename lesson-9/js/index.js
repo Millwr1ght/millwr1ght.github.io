@@ -70,7 +70,7 @@ fetch(requestURL)
             townPicture.setAttribute('src', `images/${town.photo}`)
 
             //add to the DOM
-            document.getElementById('town-cards').appendChild(townCard);
+            document.getElementById('town-cards').appendChild(townC=ard);
         
         }
     };
