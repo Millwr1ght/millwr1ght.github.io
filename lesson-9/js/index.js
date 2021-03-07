@@ -29,11 +29,11 @@ fetch(requestURL)
   })
   //now with that response
   .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    //console.table(jsonObject);  // temporary checking for valid response and data parsing
     const towns = jsonObject['towns'];
     for (let i = 0; i < towns.length; i++) {
         let town = towns[i];
-        if (KWDDtowns.includes(town)) {
+        if (KWDDtowns.includes(town.name)) {
             //create town card
             let townCard = document.createElement('article');
             townCard.setAttribute('id', `${town.name}`);
