@@ -353,10 +353,14 @@ footer {
     flex-wrap: wrap;
 }
 
-article {
+article .town-card {
     max-width: 600px;
     text-align: center;
     margin: .5rem auto;
     display: flex;
 	flex-direction: row;
+}
+
+.motto {
+    font-style: italic;
 }

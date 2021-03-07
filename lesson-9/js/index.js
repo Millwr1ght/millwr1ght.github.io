@@ -36,33 +36,38 @@ fetch(requestURL)
         if (KWDDtowns.includes(town)) {
             //create town card
             let townCard = document.createElement('article');
-            townCard.setAttribute('id', town.name);
+            townCard.setAttribute('id', `${town.name}`);
             townCard.setAttribute('class', 'town-card');
 
             //town name
             let h2 = document.createElement('h2');
-            h2.textContent = town.name;
+            h2.textContent = `${town.name}`;
             townCard.appendChild(h2);
 
             //town motto,
             let motto = document.createElement('p');
-            motto.textContent = town.motto;
+            motto.textContent = `${town.motto}`;
+            motto.setAttribute("class", "motto");
             townCard.appendChild(motto);
 
             //town year founded,
             let founded = document.createElement('p');
-            founded.textContent = "Founded in: " + town.yearFounded;
+            founded.textContent = `Founded in: ${town.yearFounded}`;
             townCard.appendChild(founded);
             
             //town population,
             let population = document.createElement('p');
-            population.textContent = "Population: " + town.currentPopulation;
+            population.textContent = `Population: ${town.currentPopulation}`;
             townCard.appendChild(population);
             
             //town annual rainfall
             let rainfall = document.createElement('p');
-            rainfall.textContent = "Average rainfall (inches): " + town.averageRainfall;
+            rainfall.textContent = `Average rainfall (inches): ${town.averageRainfall}`;
             townCard.appendChild(rainfall);
+
+            //town img
+            let townPicture = document.createElement('img');
+            townPicture.setAttribute('src', `images/${town.photo}`)
 
             //add to the DOM
             document.getElementById('town-cards').appendChild(card);
