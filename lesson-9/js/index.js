@@ -66,7 +66,7 @@ fetch(requestURL)
             
             //town annual rainfall
             let rainfall = document.createElement('p');
-            rainfall.textContent = `Average rainfall (inches): ${town.averageRainfall}`;
+            rainfall.textContent = `Average rainfall: ${town.averageRainfall}in`;
             textWrapper.appendChild(rainfall);
 
             //town img
