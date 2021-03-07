@@ -26,7 +26,7 @@
     }
 
     /* nav */
-    .nav-list {
+    #nav-list {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -38,12 +38,12 @@
         display: none;
     }
 
-    .nav-list li {
+    #nav-list li {
         display: block;
         flex: 1 1 auto;
     }
 
-    .nav-list li:first-child {
+    #nav-list li:first-child {
         display: none;
     }
 

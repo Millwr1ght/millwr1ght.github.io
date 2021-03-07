@@ -111,14 +111,14 @@ header>h2 {
     box-shadow: 0 0 15px var(--main-gray);
 }
 
-.nav-list {
+#nav-list {
     list-style-type: none;
     margin: auto;
     padding: 0;
     display: block;
 }
 
-.nav-list li:first-child {
+#nav-list li:first-child {
     display: block;
 }
 
@@ -127,7 +127,7 @@ header>h2 {
     background: none;
 }
 
-.nav-list li {
+#nav-list li {
     display: none;
 }
 
@@ -146,8 +146,8 @@ nav a:visited {
     color: var(--nav-link-color);
 }
 
-.nav-list li .active:link,
-.nav-list li .active:visited {
+#nav-list li .active:link,
+#nav-list li .active:visited {
     color: var(--nav-link-color2);
 }
 
