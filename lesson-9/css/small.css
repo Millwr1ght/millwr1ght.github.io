@@ -349,16 +349,13 @@ footer {
 /* home page --------------------*/
 
 #town-cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
 }
 
 article .town-card {
     max-width: 600px;
     text-align: center;
     margin: .5rem auto;
-    display: flex;
-	flex-direction: row;
 }
 
 .motto {
