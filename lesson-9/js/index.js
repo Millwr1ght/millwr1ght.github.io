@@ -39,37 +39,43 @@ fetch(requestURL)
             townCard.setAttribute('id', `${town.name}`);
             townCard.setAttribute('class', 'town-card content');
 
+            let textWrapper = document.createElement('div');
+            let imgWrapper = document.createElement('div');
+
             //town name
             let h2 = document.createElement('h2');
             h2.textContent = `${town.name}`;
-            townCard.appendChild(h2);
+            textWrapper.appendChild(h2);
 
             //town motto,
             let motto = document.createElement('p');
             motto.textContent = `${town.motto}`;
             motto.setAttribute("class", "motto");
-            townCard.appendChild(motto);
+            textWrapper.appendChild(motto);
 
             //town year founded,
             let founded = document.createElement('p');
             founded.textContent = `Founded in: ${town.yearFounded}`;
-            townCard.appendChild(founded);
+            textWrapper.appendChild(founded);
             
             //town population,
             let population = document.createElement('p');
             population.textContent = `Population: ${town.currentPopulation}`;
-            townCard.appendChild(population);
+            textWrapper.appendChild(population);
             
             //town annual rainfall
             let rainfall = document.createElement('p');
             rainfall.textContent = `Average rainfall (inches): ${town.averageRainfall}`;
-            townCard.appendChild(rainfall);
+            textWrapper.appendChild(rainfall);
 
             //town img
             let townPicture = document.createElement('img');
             townPicture.setAttribute('src', `images/${town.photo}`);
             townPicture.setAttribute('alt', `definitely a photo of ${town.name}`);
+            imgWrapper.appendChild(townPicture);
 
+            townCard.appendChild(textWrapper);
+            townCard.appendChild(imgWrapper);
             //add to the DOM
             document.getElementById('town-cards').appendChild(townCard);
         
