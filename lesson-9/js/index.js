@@ -41,6 +41,7 @@ fetch(requestURL)
 
             let textWrapper = document.createElement('div');
             let imgWrapper = document.createElement('div');
+            textWrapper.setAttribute('class', 'text-wrapper');
 
             //town name
             let h2 = document.createElement('h2');

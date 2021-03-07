@@ -361,3 +361,14 @@ article .town-card {
 .motto {
     font-style: italic;
 }
+
+.img-wrapper img {
+    width: 50%;
+    margin: 0.5rem auto;
+}
+
+.text-wrapper,
+.text-wrapper p,
+.text-wrapper h2 {
+    text-align: center;
+}
