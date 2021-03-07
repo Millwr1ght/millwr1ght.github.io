@@ -108,4 +108,26 @@
     }
 
     /*weather home page*/
+    #town-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    article .towncard {
+        max-width: 960px;
+        text-align: center;
+        margin: .5rem auto;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    article .town-card:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    article .town-card img {
+        border:1px solid #000080;
+        width: 100%; 
+        height: auto;
+    }
 }
