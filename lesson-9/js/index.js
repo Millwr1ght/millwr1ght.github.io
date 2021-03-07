@@ -9,10 +9,12 @@ const yearSpan = document.getElementById('thisYear');
 yearSpan.innerHTML = year;
 
 //nav
-const navButton = document.getElementById('nav-button');
-const topNavList = document.getElementById('top-nav-list');
+//const navButton = document.getElementById('nav-button');
 
-navButton.addEventListener('click', () => {topNavList.classList.toggle('responsive')}, false);
+function navToggle() {
+    let topNavList = document.getElementById('top-nav-list');
+    topNavList.classList.toggle('responsive');
+};
 window.onresize = () => {if (window.innerWidth > 640) topNavList.classList.remove('responsive')};
 
 
