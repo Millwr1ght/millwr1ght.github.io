@@ -37,8 +37,7 @@ fetch(requestURL)
             //create town card
             let townCard = document.createElement('article');
             townCard.setAttribute('id', `${town.name}`);
-            townCard.setAttribute('class', 'town-card');
-            townCard.setAttribute('class', 'content');
+            townCard.setAttribute('class', 'town-card content');
 
             //town name
             let h2 = document.createElement('h2');
@@ -68,7 +67,8 @@ fetch(requestURL)
 
             //town img
             let townPicture = document.createElement('img');
-            townPicture.setAttribute('src', `images/${town.photo}`)
+            townPicture.setAttribute('src', `images/${town.photo}`);
+            townPicture.setAttribute('alt', `definitely a photo of ${town.name}`);
 
             //add to the DOM
             document.getElementById('town-cards').appendChild(townCard);
