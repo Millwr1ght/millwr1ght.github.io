@@ -18,7 +18,7 @@ window.onresize = () => {if (window.innerWidth > 640) topNavList.classList.remov
 
 //populate town-cards
 
-const requestURL = '';
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 const KWDDtowns = ['Preston', 'Fish Haven', 'Soda Springs'];
 
 fetch(requestURL)
