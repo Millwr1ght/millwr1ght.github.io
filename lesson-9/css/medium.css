@@ -115,6 +115,7 @@
     
     article .towncard {
         max-width: 960px;
+        padding: 1rem;
         text-align: center;
         margin: .5rem auto;
         display: flex;
