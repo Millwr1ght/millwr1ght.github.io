@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KWDD 230 Weather | Preston</title>
+    <meta name="description" content="The latest updates for weather news for southeastern Idaho">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/small.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+    <div id="friday-deal">
+        <p>Saturday == Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+
+    <header>
+        <div class="header-box">
+            <img class="logo" alt="KWDD Weather" src="images/iconfinder_sun.png">
+            <div class="title-box">
+                <h1>KWDD 230 Weather</h1>
+                <p>The latest updates for weather news for southeastern Idaho</p>
+            </div>
+        </div>
+
+
+        <nav id="top-nav">
+            <ul class="nav-list">
+                <li class="nav-menu"><button class="nav-icon" onclick="navToggle()"><img id="menu-icon"
+                            src="images/icons8-menu.svg" alt="nav-icon"></button></li>
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Preston</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Soda Springs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Fish Haven</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Storm Center</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2 class="main-title">Preston, Idaho</h2>
+
+        <section class="hero-box content">
+            <!-- hero image-->
+            <!-- <img class="hero-image" alt="lake by george-ketselashvili" src="images/lake-george-ketselashvili.jpg"> -->
+            <picture>
+                    <source srcset="images/wdd230_image_franklin_medium.jpg" media="(min-width: 640px) and (max-width: 959px)">
+                        <source srcset="images/wdd230_image_franklin_large.jpg" media="(min-width: 960px)">
+
+                <img src="images/wdd230_image_franklin_small.jpg" alt="fields and sunrise">
+            </picture>
+            <!-- weather summary box -->
+            <section class="hero-weather">
+                <h4>Today's Highlights</h4>
+                <p>Temperature: <span id="summary-temp"></span></p>
+                <p>Wind Speed: <span id="summary-wind-speed">50</span> mph</p>
+                <p>Wind Chill: <span id="summary-wind-chill"></span></p>
+                <p>Pressure: <span id="summary-humid">1.2 atm</span></p>
+                
+            </section>
+        </section>
+
+        <section class="forecast-box content">
+            <h3 class="forecast-heading">Five Day Forecast</h3>
+            <div class="forecast-grid">
+                <div class="forecast-day">
+                    <h4 id="day2">Sun</h4>
+                    <img class="forecast-img" alt="cloudy" src="images/iconfinder_cloudy.png">
+                    <p>41°F</p>
+                </div>
+                <div class="forecast-day">
+                    <h4 id="day3">Mon</h4>
+                    <img class="forecast-img" alt="cloudy" src="images/iconfinder_cloudy.png">
+                    <p>22°F</p>
+                </div>
+                <div class="forecast-day">
+                    <h4 id="day4">Tue</h4>
+                    <img class="forecast-img" alt="cloudy" src="images/iconfinder_cloudy.png">
+                    <p>3 K</p>
+                </div>
+                <div class="forecast-day">
+                    <h4 id="day5">Wed</h4>
+                    <img class="forecast-img" alt="cloudy" src="images/iconfinder_cloudy.png">
+                    <p>40°F</p>
+                </div>
+                <div class="forecast-day">
+                    <h4 id="day5">Thu</h4>
+                    <img class="forecast-img" alt="cloudy" src="images/iconfinder_cloudy.png">
+                    <p>44°F</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- definitely not copyright infringement, nope-->
+        <article class="article-box content">
+            <img class="article-img" alt="happy smiling people by kat-jayne" src="images/happy-kat-jayne.jpg">
+            <h2 class="article-heading">Top 10 Things To Try in Preston!</h2>
+            <p>Isn't it great to do something you can't fail at? A happy cloud. You could sit here for
+                weeks with your one hair brush trying to do that - or you could do it with one stroke 
+                with an almighty brush.</p>
+            <p>We can always carry this a step further. There's really no end to this. There is no 
+                right or wrong - as long as it makes you happy and doesn't hurt anyone. This present 
+                moment is perfect simply due to the fact you're experiencing it. We'll have a super 
+                time. Here's something that's fun. Very easy to work these to death.</p>
+            <p>Without washing the brush, I'm gonna go right into some Van Dyke Brown, some Burnt 
+                Umber, and a little bit of Sap Green. We'll throw some old gray clouds in here just 
+                sneaking around and having fun. Those great big fluffy clouds. Let's put some 
+                highlights on these little trees. The sun wouldn't forget them. In nature, dead trees 
+                are just as normal as live trees.</p>
+            <button onclick="redirect()">Read More!</button>
+        </article>
+
+        <section class="contact-box content" content>
+            <h2 class="contact-heading">Contact Information</h2>
+            
+            <div>
+                <p class="contact-street-address">
+                    6354 Aberystwyth Street<br>
+                    Avon-upon-arrollo, ID 75189
+                </p>
+                <div class="contact-phone">
+                    <p>Phone: 247.434.5508</p>
+                </div>
+                <div class="contact-email">
+                    <p>Email: weather@kwdd.com</p>
+                </div>
+                <div class="contact-social">
+                    <a href="https://facebook.com"><img src="images/social/facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com"><img src="images/social/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div>
+                <img class="contact-img" alt="idaho by binyamin-mellish" src="images/idaho-binyamin-mellish.jpg">
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p class="copy-box">&copy; &nbsp;<span id="thisYear"></span> | KWDD 230 | Nathan Johnston</p>
+        <p class="update"><span id="lastUpdated"></span></p>
+    </footer>
+
+    <!-- scripts to run before rendering has completed-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/preston-10.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>
