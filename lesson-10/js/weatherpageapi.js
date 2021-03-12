@@ -1,7 +1,7 @@
 //declare
 const cityID = "5604473";
 const apiKey = "f7e1c17f0ec2e5c6172315506ce89862";
-const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&appid=${apiKey}&units=imperial`
+const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&appid=${OWM_API_ID}&units=imperial`
 
 //fetch
 fetch(apiURL)
