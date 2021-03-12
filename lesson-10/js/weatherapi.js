@@ -14,14 +14,4 @@ fetch(apiURL)
         document.getElementById('imagesrc').textContent = imagesrc; //testing
         document.getElementById('icon').setAttribute('src', imagesrc);
         document.getElementById('icon').setAttribute('alt', desc);
-
-        //get current temp
-        document.getElementById('current-temp').textContent = jsObject.main.temp; //testing
-
-        //fill the weather summary box
-        document.getElementById('summary-condition').textContent = jsObject.main.main; //current condition
-        document.getElementById('summary-temp').textContent = jsObject.main.temp + "°F"; //current temp
-        document.getElementById('summary-speed').textContent = jsObject.wind.speed + " mph"; //wind speed
-        //generate elsewhere // document.getElementByID('summary-wind-chill').textContent = jsObject.main.feels_like + "°F"; //wind chill
-        document.getElementById('summary-humid').textContent = jsObject.main.humidity; //current humid
     });
