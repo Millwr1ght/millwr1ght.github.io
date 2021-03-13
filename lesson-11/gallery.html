@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KWDD 230 Weather | Gallery</title>
+    <meta name="description" content="Weather, whether you like it or not">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/small.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css" media="(min-width: 640px and max-width: )">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+    <div id="friday-deal">
+        <p>Saturday == Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+
+    <header>
+        <div class="header-box">
+            <img class="logo" alt="KWDD Weather" src="images/iconfinder_sun.png">
+            <div class="title-box">
+                <h1>KWDD 230 Weather</h1>
+                <p>The latest updates for weather news for southeastern Idaho</p>
+            </div>
+        </div>
+
+
+        <nav id="top-nav">
+            <ul class="nav-list">
+                <li class="nav-menu"><button class="nav-icon" onclick="navToggle()"><img id="menu-icon"
+                            src="images/icons8-menu.svg" alt="nav-icon"></button></li>
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Preston</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Soda Springs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Fish Haven</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Storm Center</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="gallery-box content">
+            <!--0 rainy day -->
+            <div class="gallery-card">
+                <picture class="gallery-picture">
+                    <source src="https://via.placeholder.com/400x300.jpg"
+                        data-src="images/rainy--dylan-skinner-small.jpg" media="(min-width: 640px)">
+                    <img src="https://via.placeholder.com/400x300.jpg" data-src="images/rainy--dylan-skinner-small.jpg"
+                        alt="rainy trails near the lake">
+                </picture>
+                <p class="gallery-card-text">A rainy day for hiking near Fish Lake</p>
+            </div>
+            <!--1 sunny day -->
+            <div class="gallery-card">
+                <picture class="gallery-picture">
+                    <source src="https://via.placeholder.com/400x300.jpg" data-src="images/sunny--p-skitter-small.jpg"
+                        media="(min-width: 640px)">
+                    <img src="https://via.placeholder.com/400x300.jpg" data-src="images/sunny--p-skitter.jpg"
+                        alt="bright sunny, mostly clear sky">
+                </picture>
+                <p class="gallery-card-text">Sunny days are nice, but we prefer the weather.</p>
+            </div>
+            <!--2 cloudy -->
+            <div class="gallery-card">
+                <picture class="gallery-picture">
+                    <source src="https://via.placeholder.com/400x300.jpg" data-src="images/cloudy--yue-su-small.jpg"
+                        media="(min-width: 640px)">
+                    <img src="https://via.placeholder.com/400x300.jpg" data-src="images/cloudy--yue-su.webp"
+                        alt="clouds over a small town">
+                </picture>
+                <p class="gallery-card-text">Clouds over definitely Preston</p>
+            </div>
+            <!--3 fog -->
+            <div class="gallery-card">
+                <picture class="gallery-picture">
+                    <source src="https://via.placeholder.com/400x300.jpg"
+                        data-src="images/foggy--nicolas-cool-small.jpg" media="(min-width: 640px)">
+                    <img src="https://via.placeholder.com/400x300.jpg" data-src="images/foggy--nicolas-cool.webp"
+                        alt="fog in the mountains">
+                </picture>
+                <p class="gallery-card-text">Foggy forests full of frogs</p>
+            </div>
+            <!--4 snowy day -->
+            <div class="gallery-card">
+                <picture class="gallery-picture">
+                    <source src="https://via.placeholder.com/400x300.jpg" data-src="images/snowy--adam-chang-small.jpg"
+                        media="(min-width: 640px)">
+                    <img src="https://via.placeholder.com/400x300.jpg" data-src="images/snowy--adam-chang.jpg"
+                        alt="a snowy forest with lake">
+                </picture>
+                <p class="gallery-card-text">Look at all that snow!</p>
+            </div>
+            <!--5 partly cloudy -->
+            <div class="gallery-card">
+                <picture class="gallery-picture">
+                    <source src="https://via.placeholder.com/400x300.jpg"
+                        data-src="images/partly-cloudy--kyle-glenn-small.jpg" media="(min-width: 640px)">
+                    <img src="https://via.placeholder.com/400x300.jpg" data-src="images/partly-cloudy--kyle-glenn.jpg"
+                        alt="partly cloudy skies over the mountains">
+                </picture>
+                <p class="gallery-card-text">Partly cloudy skies make for great pictures</p>
+            </div>
+            <!--6 lightning strike -->
+            <div class="gallery-card">
+                <picture class="gallery-picture">
+                    <source src="https://via.placeholder.com/400x300.jpg" data-src="images/stormy--noaa-w-small.jpg"
+                        media="(min-width: 640px)">
+                    <img src="https://via.placeholder.com/400x300.jpg" data-src="images/stormy--noaa-w.webp"
+                        alt="lightning striking fields in a Storm">
+                </picture>
+                <p class="gallery-card-text">Be careful of lightning during storms</p>
+            </div>
+            <!--7 rainbow -->
+            <div class="gallery-card">
+                <picture class="gallery-picture">
+                    <source src="https://via.placeholder.com/400x300.jpg"
+                        data-src="images/rainbow--david-brooke-martin-t-small.jpg" media="(min-width: 640px)">
+                    <img src="https://via.placeholder.com/400x300.jpg"
+                        data-src="images/rainbow--david-brooke-martin-t.webp" alt="rainbow over a mountain lake">
+                </picture>
+                <p class="gallery-card-text">A rainbow after a storm in Fish Lake</p>
+            </div>
+            <!--8 wimdy -->
+            <div class="gallery-card">
+                <picture class="gallery-picture">
+                    <source src="https://via.placeholder.com/400x300.jpg"
+                        data-src="images/windy--les-anderson-small.jpg" media="(min-width: 640px)">
+                    <img src="https://via.placeholder.com/400x300.jpg" data-src="images/windy--les-anderson.webp"
+                        alt="windy day on a snowy mountain">
+                </picture>
+                <p class="gallery-card-text">High wind blowing through the ski slopes</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copy-box">&copy; &nbsp;<span id="thisYear"></span> | KWDD 230 | Nathan Johnston</p>
+        <p class="update"><span id="lastUpdated"></span></p>
+    </footer>
+
+    <!-- scripts to run before rendering has completed-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+@media screen and (min-width: 641px) {
+
+    /* header */
+    header,
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .title-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* nav */
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5em;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-list li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .nav-list li:first-child {
+        display: none;
+    }
+
+    nav a:hover {
+        color: var(--nav-hover-link-color);
+        background-color: var(--nav-hover-background-color);
+    }
+
+
+    /* main */
+    main,
+    footer {
+        max-width: 640px;
+    }
+
+    /* hero-img-box */
+    .hero-weather {
+        position: absolute;
+        top: 30px;
+        right: 50px;
+    }
+
+    /* five-day forecast */
+    .forecast-day {
+        padding: 0.5em;
+    }
+
+    /* town article */
+    .article-img {
+        float: right;
+        width: 50%;
+        padding: 1em;
+    }
+
+    /* contact info */
+    /* .contact-img {
+    } */
+
+    .contact-paragraph {
+        display: block;
+        float: right;
+        padding: 1em;
+        font-size: 16px;
+    }
+
+    /* gallery */
+    .gallery-box {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.5em;
+    }
+
+    .gallery-picture:hover {
+        box-shadow: none;
+    }
+
+    /*storm center form*/
+    form {
+        margin: 0 auto;
+        max-width: 640px;
+    }
+
+    /*weather home page*/
+    #town-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    article .towncard {
+        max-width: 960px;
+        padding: 1rem;
+        text-align: center;
+        margin: .5rem auto;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    article .town-card:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    article .town-card img {
+        border:1px solid #000080;
+        width: 100%; 
+        height: auto;
+    }
+}
