@@ -12,7 +12,12 @@ yearSpan.innerHTML = year;
 //const navButton = document.getElementById('nav-button');
 
 function navToggle() {
-    let topNavList = document.getElementById('nav-list');
-    topNavList.classList.toggle('responsive');
+  let topNavList = document.getElementById('nav-list');
+  topNavList.classList.toggle('responsive');
 };
-window.onresize = () => {if (window.innerWidth > 640) topNavList.classList.remove('responsive')};
+
+window.onresize = () => {
+  if (window.innerWidth > 640) {
+    document.getElementById('nav-list').classList.remove('responsive')
+  }
+};

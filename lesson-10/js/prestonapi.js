@@ -1,8 +1,8 @@
 //declare
 const cityID = "5604473";
 const apiKey = "f7e1c17f0ec2e5c6172315506ce89862";
-const apiURL_current = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&appid=${OWM_API_ID}&units=imperial`
-const apiURL_forecast = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&appid=${OWM_API_ID}&units=imperial`
+const apiURL_current = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&appid=${apiKey}&units=imperial`
+const apiURL_forecast = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&appid=${apiKey}&units=imperial`
 
 //fetch current data
 fetch(apiURL_current)
@@ -12,7 +12,7 @@ fetch(apiURL_current)
 
         let temperature = jsObject.main.temp
         let windSpeed = jsObject.wind.speed;
-        console.log(temperature, temperature <= 50, windSpeed, windspeed > 3) //check inputs
+        console.log(temperature, temperature <= 50, windSpeed, windSpeed > 3) //check inputs
         if (temperature > 50 || windSpeed <= 3) {
             windChillOutput.innerHTML = "N/A";
         } else {
@@ -34,7 +34,6 @@ fetch(apiURL_forecast)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log("forecast: ", jsObject);
-        const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
         const forecast = jsObject["list"].filter((day) =>
             day.dt_txt.includes("18:00:00")
         );
