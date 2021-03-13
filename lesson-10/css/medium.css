@@ -79,10 +79,8 @@
     }
 
     /* contact info */
-    .contact-img {
-        width: 50%;
-        padding: 1em;
-    }
+    /* .contact-img {
+    } */
 
     .contact-paragraph {
         display: block;
