@@ -49,4 +49,5 @@ fetch(apiURL_forecast)
 
             //temperature
             document.querySelector(`.forecast-grid:nth-child(${i}) p`).innerHTML = `${Math.round(day.main.temp)}°F`;
-        })
+        }
+    });
