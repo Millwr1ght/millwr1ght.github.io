@@ -2,7 +2,7 @@
 const cityID = "5604473";
 const apiKey = "f7e1c17f0ec2e5c6172315506ce89862";
 const apiURL_current = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&appid=${apiKey}&units=imperial`
-const apiURL_forecast = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&appid=${apiKey}&units=imperial`
+const apiURL_forecast = `https://api.openweathermap.org/data/2.5/forecast?id=${cityID}&appid=${apiKey}&units=imperial`
 
 //fetch current data
 fetch(apiURL_current)
@@ -17,13 +17,13 @@ fetch(apiURL_current)
             windChillOutput.innerHTML = "N/A";
         } else {
             let windChill = 35.74 + (0.6215 * temperature) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temperature * Math.pow(windSpeed, 0.16));
-            document.getElementById('summary-wind-chill').innerHTML = windChill + "°F";
+            document.getElementById('summary-wind-chill').innerHTML = Math.round(windChill) + "°F";
         }
         //get weather icon src and alt
         /*  */
 
         //fill the weather summary box
-        document.getElementById('summary-condition').textContent = jsObject.main.main; //current condition
+        //document.getElementById('summary-condition').textContent = jsObject.main.main; //current condition
         document.getElementById('summary-temp').textContent = jsObject.main.temp + "°F"; //current temp
         document.getElementById('summary-speed').textContent = jsObject.wind.speed + " mph"; //wind speed
         //generate elsewhere // document.getElementByID('summary-wind-chill').textContent = jsObject.main.feels_like + "°F"; //wind chill
@@ -43,10 +43,10 @@ fetch(apiURL_forecast)
             //image
             let imagesrc = 'https://openweathermap.org/img/w/' + day.weather[0].icon + '.png';
             let desc = day.weather[0].description;
-            document.querySelector(`.forecast-grid:nth-child(${i}) img`).setAttribute('src', imagesrc);
-            document.querySelector(`.forecast-grid:nth-child(${i}) img`).setAttribute('alt', desc);
+            document.querySelector(`.forecast-grid div:nth-child(${i+1}) img`).setAttribute('src', imagesrc);
+            document.querySelector(`.forecast-grid div:nth-child(${i+1}) img`).setAttribute('alt', desc);
 
             //temperature
-            document.querySelector(`.forecast-grid:nth-child(${i}) p`).innerHTML = `${Math.round(day.main.temp)}°F`;
+            document.querySelector(`.forecast-grid div:nth-child(${i+1}) p`).innerHTML = `${Math.round(day.main.temp)}°F`;
         }
     });
