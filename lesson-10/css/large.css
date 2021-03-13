@@ -1,0 +1,44 @@
+@media screen and (min-width: 1080px) {
+
+    .logo {
+        width: 150px;
+    }
+
+    main,
+    footer {
+        max-width: 960px;
+    }
+
+    .contact-paragraph {
+        font-size: 20px;
+    }
+
+    /* gallery */
+    .gallery-box {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.5em;
+    }
+
+    .gallery-card:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+    /*storm center form*/
+    form {
+        margin: 0 auto;
+        max-width: 1080px;
+    }
+
+    /*weather home page*/
+    #town-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        align-items: center;
+    }
+
+    .town-card {
+        padding:1rem;
+        display: block;
+    }
+}
