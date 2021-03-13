@@ -111,14 +111,14 @@ header>h2 {
     box-shadow: 0 0 15px var(--main-gray);
 }
 
-#nav-list {
+.nav-list {
     list-style-type: none;
     margin: auto;
     padding: 0;
     display: block;
 }
 
-#nav-list li:first-child {
+.nav-list li:first-child {
     display: block;
 }
 
@@ -127,8 +127,9 @@ header>h2 {
     background: none;
 }
 
-#nav-list li {
+.nav-list li {
     display: none;
+    padding: 0.25rem 0;
 }
 
 .responsive li {
@@ -137,7 +138,7 @@ header>h2 {
 
 nav a {
     justify-content: space-around;
-    padding: 1rem;
+    padding: 8px;
     min-width: 70px;
 }
 
@@ -146,13 +147,13 @@ nav a:visited {
     color: var(--nav-link-color);
 }
 
-#nav-list li .active:link,
-#nav-list li .active:visited {
+.nav-list li .active:link,
+.nav-list li .active:visited {
     color: var(--nav-link-color2);
 }
 
-nav li:hover {
-    color: var(--nav-hover-link-color);
+nav a:hover {
+    color: var(--nav-hover-link-color2);
     background-color: var(--nav-hover-background-color);
 }
 
@@ -223,20 +224,37 @@ main {
 /* contact info box*/
 .contact-box {
     padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 1fr;
 }
 
 .contact-heading {
     text-align: center;
+    justify-content: center;
+    align-content: center;
+    grid-area: 1/1/2/3;
+}
+
+.contact-copy {
+    padding: 1.5rem; 
+    width:auto;
+    grid-area: 2/2/3/3;
+    text-align: center;
 }
 
 .contact-img {
-    width: 50%;
-
+    width: 100%;
+    grid-area: 2/1/3/2;
 }
 
 .contact-paragraph {
     display: block;
     text-align: center;
+}
+
+.contact-social img{
+    max-width: 48px;
 }
 
 /* gallery --------------------------------------------*/
