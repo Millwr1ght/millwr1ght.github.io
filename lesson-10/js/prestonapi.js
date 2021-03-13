@@ -23,7 +23,7 @@ fetch(apiURL_current)
         /*  */
 
         //fill the weather summary box
-        //document.getElementById('summary-condition').textContent = jsObject.main.main; //current condition
+        document.getElementById('summary-condition').textContent = jsObject.weather[0].main; //current condition
         document.getElementById('summary-temp').textContent = jsObject.main.temp + "°F"; //current temp
         document.getElementById('summary-speed').textContent = jsObject.wind.speed + " mph"; //wind speed
         //generate elsewhere // document.getElementByID('summary-wind-chill').textContent = jsObject.main.feels_like + "°F"; //wind chill
