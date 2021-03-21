@@ -301,6 +301,7 @@ form button,
 form input,
 form select,
 form textarea {
+    display: block;
     font-family: inherit;
     font-size: 100%;
 }
@@ -308,11 +309,10 @@ form textarea {
 form label.not-radio,
 form button,
 form input,
-form select,
-form textarea {
+form select {
     width: 250px;
-    padding: 0;
-    margin: 0 0 20px;
+    padding: 0.25rem;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -326,13 +326,12 @@ fieldset {
     padding: 1rem;
 }
 
-/* label.not-radio {
-    margin-bottom: 20px;
-} */
-
-
 #danger-list {
     padding-inline-start: 0px;
+}
+
+form label.not-radio {
+    margin: 0 0 10px;
 }
 
 form label.radio {
@@ -349,7 +348,6 @@ textarea {
     width: 100%;
     max-width: 800px;
     min-height: 120px;
-    padding: 1rem;
 }
 
 #submit {
