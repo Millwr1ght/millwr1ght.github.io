@@ -5,10 +5,10 @@ switch (city) {
         const cityID = "5604473";
         break;
     case "Soda Springs":
-        const cityID = "5604473";
+        const cityID = "5607916";
         break;
     case "Fish Haven":
-        const cityID = "5604473";
+        const cityID = "5585010";
         break;
     default:
         break;
