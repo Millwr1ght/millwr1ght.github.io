@@ -308,7 +308,7 @@ form select,
 form textarea {
     width: 250px;
     padding: 0;
-    margin: 0;
+    margin: 0 0 20px;
     box-sizing: border-box;
 }
 
@@ -322,9 +322,9 @@ fieldset {
     padding: 1rem;
 }
 
-label {
+/* label.not-radio {
     margin-bottom: 20px;
-}
+} */
 
 
 #danger-list {
