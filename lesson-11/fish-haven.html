@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>KWDD 230 Weather | Preston</title>
+    <title>KWDD 230 Weather | Fish Haven</title>
     <meta name="description" content="The latest updates for weather news for southeastern Idaho">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/small.css">
@@ -14,10 +14,6 @@
 </head>
 
 <body>
-    <div id="friday-deal">
-        <p>Saturday == Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
-    </div>
-
     <header>
         <div class="header-box">
             <a href="index.html"><img class="logo" alt="KWDD Weather" src="images/iconfinder_sun.png"></a>
@@ -33,9 +29,9 @@
                 <li class="nav-menu"><button class="nav-icon" onclick="navToggle()"><img id="menu-icon"
                             src="images/icons8-menu.svg" alt="nav-icon"></button></li>
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link active" href="preston.html">Preston</a></li>
+                <li class="nav-item"><a class="nav-link" href="preston.html">Preston</a></li>
                 <li class="nav-item"><a class="nav-link" href="soda-springs.html">Soda Springs</a></li>
-                <li class="nav-item"><a class="nav-link" href="fish-haven.html">Fish Haven</a></li>
+                <li class="nav-item"><a class="nav-link active" href="fish-haven.html">Fish Haven</a></li>
                 <li class="nav-item"><a class="nav-link" href="stormcenter.html">Storm Center</a></li>
                 <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
             </ul>
@@ -49,10 +45,10 @@
         <section class="hero-box content">
             <!-- hero image-->
             <picture>
-                    <source srcset="images/preston/banner_img_medium.jpg" media="(min-width: 640px) and (max-width: 959px)">
-                        <source srcset="images/preston/banner_img_large.jpg" media="(min-width: 960px)">
+                    <source srcset="images/fish/banner_img_medium.jpg" media="(min-width: 640px) and (max-width: 959px)">
+                        <source srcset="images/fish/banner_img_large.jpg" media="(min-width: 960px)">
 
-                <img data-src="images/preston/banner_img_small.jpg" alt="fields and sunrise">
+                <img data-src="images/fish/banner_img_small.jpg" alt="fields and sunrise">
             </picture>
             <!-- weather summary box -->
             <section class="hero-weather">
@@ -71,27 +67,27 @@
             <div class="forecast-grid">
                 <div class="forecast-day">
                     <h4 id="day2">Sun</h4>
-                    <img class="forecast-img" alt="cloudy" src="images/preston/iconfinder_cloudy.png">
+                    <img class="forecast-img" alt="cloudy" src="images/fish/iconfinder_cloudy.png">
                     <p>41°F</p>
                 </div>
                 <div class="forecast-day">
                     <h4 id="day3">Mon</h4>
-                    <img class="forecast-img" alt="cloudy" src="images/preston/iconfinder_cloudy.png">
+                    <img class="forecast-img" alt="cloudy" src="images/fish/iconfinder_cloudy.png">
                     <p>22°F</p>
                 </div>
                 <div class="forecast-day">
                     <h4 id="day4">Tue</h4>
-                    <img class="forecast-img" alt="cloudy" src="images/preston/iconfinder_cloudy.png">
+                    <img class="forecast-img" alt="cloudy" src="images/fish/iconfinder_cloudy.png">
                     <p>3 K</p>
                 </div>
                 <div class="forecast-day">
                     <h4 id="day5">Wed</h4>
-                    <img class="forecast-img" alt="cloudy" src="images/preston/iconfinder_cloudy.png">
+                    <img class="forecast-img" alt="cloudy" src="images/fish/iconfinder_cloudy.png">
                     <p>40°F</p>
                 </div>
                 <div class="forecast-day">
                     <h4 id="day5">Thu</h4>
-                    <img class="forecast-img" alt="cloudy" src="images/preston/iconfinder_cloudy.png">
+                    <img class="forecast-img" alt="cloudy" src="images/fish/iconfinder_cloudy.png">
                     <p>44°F</p>
                 </div>
             </div>
@@ -99,8 +95,8 @@
 
         <!-- definitely not copyright infringement, nope-->
         <article class="article-box content">
-            <img class="article-img" alt="happy smiling people by kat-jayne" data-src="images/preston/happy-kat-jayne.jpg">
-            <h2 class="article-heading">Top 10 Things To Try in Preston!</h2>
+            <img class="article-img" alt="happy smiling people by kat-jayne" data-src="images/fish/happy-kat-jayne.jpg">
+            <h2 class="article-heading">Top 10 Things To Try in Fish Haven!</h2>
             <p>Isn't it great to do something you can't fail at? A happy cloud. You could sit here for
                 weeks with your one hair brush trying to do that - or you could do it with one stroke 
                 with an almighty brush.</p>
@@ -151,7 +147,7 @@
     <script src="js/webfontload.js"></script>
     <script src="js/lazyload.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/prestonapi.js"></script>
+    <script src="js/weatherapi.js"></script>
 </body>
 
 </html>

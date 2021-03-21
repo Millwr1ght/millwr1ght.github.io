@@ -1,5 +1,18 @@
 //declare
-const cityID = "5604473";
+let city = document.getElementById('town').value;
+switch (city) {
+    case "Preston":
+        const cityID = "5604473";
+        break;
+    case "Soda Springs":
+        const cityID = "5604473";
+        break;
+    case "Fish Haven":
+        const cityID = "5604473";
+        break;
+    default:
+        break;
+}
 const apiKey = "f7e1c17f0ec2e5c6172315506ce89862";
 const apiURL_current = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&appid=${apiKey}&units=imperial`
 const apiURL_forecast = `https://api.openweathermap.org/data/2.5/forecast?id=${cityID}&appid=${apiKey}&units=imperial`
