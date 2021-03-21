@@ -1,13 +1,13 @@
 //declare
 switch (document.body.dataset.city) {
     case "preston":
-      citykey = "5604473";
+      cityID = "5604473";
       break;
     case "soda-springs":
-      citykey = "5607916";
+      cityID = "5607916";
       break;
     case "fish-haven":
-      citykey = "5585010";
+      cityID = "5585010";
       break;
   }
   
