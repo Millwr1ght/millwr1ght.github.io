@@ -177,6 +177,10 @@ main {
     position: relative;
 }
 
+.hero-heading {
+    text-align: center;
+}
+
 .hero-img {
     width: 100%;
 }
