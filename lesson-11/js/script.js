@@ -9,7 +9,6 @@ const yearSpan = document.getElementById('thisYear');
 yearSpan.innerHTML = year;
 
 //nav
-//const navButton = document.getElementById('nav-button');
 
 function navToggle() {
   let topNavList = document.querySelector('.nav-list');
