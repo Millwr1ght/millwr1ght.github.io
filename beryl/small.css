@@ -1,0 +1,33 @@
+/* pier 734 imports */
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Oxygen&display=swap');
+
+/* variables */
+:root {
+    /* color scheme */
+    --color-white: #f0f0f0;
+    --color-gray: #444;
+    --color-primary: #ff521b;
+    --color-secondary: #814b71;
+    --color-accent1: #6A101f;
+    --color-accent2: #fdb021;
+    --color-accent3: #f9ff47;
+
+    /* color usage */
+    /* text */
+    --headline-color-on-white: black;
+    --headline-color-on-color: black;
+    --paragraph-color-on-white: black;
+    --paragraph-color-on-color: black;
+    /* background */
+    --paragraph-background-color: var(--color-secondary);
+    /* nav scheme */
+    --nav-link-color: var(--color-accent1);
+    --nav-background-color: var(--color-primary);
+    --nav-hover-link-color: var(--color-accent1);
+    --nav-hover-background-color: var(--color-accent3);
+
+    /* typography */
+    --heading-font: 'Bitter', 'Times New Roman', serif;
+    --paragraph-font: 'Oxygen', Arial, sans-serif;
+}
+

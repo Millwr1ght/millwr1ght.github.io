@@ -1,0 +1,36 @@
+{
+    "businesses" : [
+        {
+            "name": "Example Ltd",
+            "address": "100 N 100 W Beryl Junction, UT",
+            "phone": "(435) 435-4354",
+            "logo": {
+                "src:": "",
+                "alt": "Example Ltd. logo"
+            },
+            "website": "business.website.org",
+            "email": "business.name@domain.org",
+            "contact": "John Smith",
+            "position": "CEO"     
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "logo": {
+                "src:": "",
+                "alt": ""
+            },
+            "website": "",
+            "email": "",
+            "contact": "",
+            "position": ""     
+        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ]
+}
