@@ -17,12 +17,12 @@
 <body>
     <header>
         <section class="logo-box">
-            <img class="logo" alt="BCC logo" loading="lazy" src="logo.png">
+            <img class="logo" alt="BCC logo" src="images/sun.svg">
         </section>
 
         <section class="sign-in-box">
-            <button class="sign-in">Sign In</button>
-            <button class="sign-up">Register</button>
+            <button class="sign-button">Sign In</button>
+            <a href="join.html"><button class="sign-button">Register</button></a>
         </section>
 
         <section class="title-box">
@@ -31,13 +31,13 @@
 
         <section class="top-nav-box">
             <nav class="top-nav">
-                <ul id="top-nav-list">
+                <ul class="top-nav-list">
+                    <li class="top-nav-menu"><button class="top-nav-button" onclick="navToggle()"><img class="top-nav-icon" src="/images/menu.svg"></button></li>
                     <li class="top-nav-item"><a class="top-nav-link" href="index.html">Home</a></li>
-                    <li class="top-nav-item"><a class="top-nav-link" href="about/about.html">About</a></li>
-                    <li class="top-nav-item"><a class="top-nav-link" href="join/join.html">Join</a></li>
-                    <li class="top-nav-item"><a class="top-nav-link" href="directory/directory.html">Directory</a></li>
-                    <li class="top-nav-item active"><a class="top-nav-link" href="contact/contact.html">Contact Us</a>
-                    </li>
+                    <li class="top-nav-item"><a class="top-nav-link" href="about.html">About</a></li>
+                    <li class="top-nav-item"><a class="top-nav-link" href="join.html">Join</a></li>
+                    <li class="top-nav-item"><a class="top-nav-link" href="directory.html">Directory</a></li>
+                    <li class="top-nav-item active"><a class="top-nav-link" href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </section>
