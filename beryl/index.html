@@ -45,17 +45,45 @@
     <main>
         <h2 class="main-title">Beryl Chamber of Commerce</h2>
         <section class="home-intro-box">
-            <p></p>
+            <h3 class="section-title"></h3>
         </section>
 
         <section class="home-ad-box"></section>
-        <section class="home-weather-box"></section>
-        <section class="home-action-box"></section>
-        <section class="home-services-box"></section>
+
+        <section class="home-weather-box">
+            <h3 class="weather-title">Current Weather</h3>
+            <img class="weather-img" id="weather-img" src="" alt="weather-img">
+            <div class="weather" id="weather-condition"></div>
+            <div class="weather" id="weather-temp"></div>
+            <div class="weather" id="weather-speed"></div>
+            <div class="weather" id="weather-humid"></div>
+            <div class="weather" id="weather-wind-chill"></div>
+        </section>
+
+        <section class="home-action-box">
+            <h3 class="action-title">Join the Chamber</h3>
+            <p class="action-paragraph"></p>
+            <a class="action-link" href="join.html">Join Now</a>
+        </section>
+
+        <section class="home-services-box">
+            <h3 class="section-title">Services</h3>
+            <p class="services-paragraph"></p>
+        </section>
+
         <section class="home-events-box"></section>
+
         <section class="home-newsletter-box">
             <h3 class="section-title">Sign Up for our Newsletter!</h3>
-            <form class="newsletter-form" action="" method="get"></form>
+            <form class="newsletter-form" action="" method="get">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <button type="submit" id="submit"></button>
+            </form>
         </section>
 
     </main>
@@ -95,6 +123,9 @@
 
     </footer>
     <!-- scripts -->
+    <script src="js/webfontload.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/weatherapi.js"></script>
     <script src="js/copy-box.js"></script>
 </body>
 
