@@ -26,7 +26,7 @@
 
         <section class="top-nav-box">
             <nav class="top-nav">
-                <ul class="top-nav-list">
+                <ul id="top-nav-list">
                     <li class="top-nav-item"><a class="top-nav-link" href="index.html">Home</a></li>
                     <li class="top-nav-item"><a class="top-nav-link" href="about/about.html">About</a></li>
                     <li class="top-nav-item active"><a class="top-nav-link" href="join/join.html">Join</a></li>
@@ -38,10 +38,184 @@
     </header>
 
     <main>
+        <h2 class="main-title">Become a Member Today</h2>
+        <section class="join-tiers-box"></section>
+        <section class="join-form-box">
+            <form id="join-form" action="/thank-you.html" method="get">
+                <!--Business Contact Information-->
+                <fieldset>
+                    <legend>Business Contact Information</legend>
 
+                    <label for="businessName">
+                        Name of your Business
+                        <input type="text" name="business-name" id="businessName" required placeholder="Name">
+                    </label>
+
+                    <label for="businessEmail">
+                        Email
+                        <input type="email" name="business-email" id="businessEmail" required placeholder="example@domain.org">
+                    </label>
+
+                    <label for="businessPhone">
+                        Phone Number
+                        <input type="tel" name="business-phone" id="businessPhone" placeholder="(123)456-7890">
+                    </label>
+
+                    <label for="businessURL">
+                        Website
+                        <input type="url" name="business-url" id="businessURL" placeholder="business.domain.org">
+                    </label>
+
+                </fieldset>
+                <!--Business Address-->
+                <fieldset>
+                    <legend>Physical Address</legend>
+
+                    <label for="pStreet">
+                        Street
+                        <input type="text" name="physical-street" id="pStreet" placeholder="321 Pioneer Rd #201">
+                    </label>
+                    <label for="pCity">
+                        City
+                        <input type="text" name="physical-city" id="pCity" placeholder="Beryl">
+                    </label>
+                    <label for="pState">
+                        State
+                        <!--maybe don't make this a select/dropdown-->
+                        <select name="physical-state" id="pState">
+                            <option value="---">---</option>
+                            <option value="Alabama">Alabama</option>
+                            <option value="Alaska">Alaska</option>
+                            <option value="Arizona">Arizona</option>
+                            <option value="Arkansas">Arkansas</option>
+                            <option value="California">California</option>
+                            <option value="Colorado">Colorado</option>
+                            <option value="Connecticut">Connecticut</option>
+                            <option value="Delaware">Delaware</option>
+                            <option value="District of Columbia">District of Columbia</option>
+                            <option value="Florida">Florida</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Guam">Guam</option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="Idaho">Idaho</option>
+                            <option value="Illinois">Illinois</option>
+                            <option value="Indiana">Indiana</option>
+                            <option value="Iowa">Iowa</option>
+                            <option value="Kansas">Kansas</option>
+                            <option value="Kentucky">Kentucky</option>
+                            <option value="Louisiana">Louisiana</option>
+                            <option value="Maine">Maine</option>
+                            <option value="Maryland">Maryland</option>
+                            <option value="Massachusetts">Massachusetts</option>
+                            <option value="Michigan">Michigan</option>
+                            <option value="Minnesota">Minnesota</option>
+                            <option value="Mississippi">Mississippi</option>
+                            <option value="Missouri">Missouri</option>
+                            <option value="Montana">Montana</option>
+                            <option value="Nebraska">Nebraska</option>
+                            <option value="Nevada">Nevada</option>
+                            <option value="New Hampshire">New Hampshire</option>
+                            <option value="New Jersey">New Jersey</option>
+                            <option value="New Mexico">New Mexico</option>
+                            <option value="New York">New York</option>
+                            <option value="North Carolina">North Carolina</option>
+                            <option value="North Dakota">North Dakota</option>
+                            <option value="Northern Marianas Islands">Northern Marianas Islands</option>
+                            <option value="Ohio">Ohio</option>
+                            <option value="Oklahoma">Oklahoma</option>
+                            <option value="Oregon">Oregon</option>
+                            <option value="Pennsylvania">Pennsylvania</option>
+                            <option value="Puerto Rico">Puerto Rico</option>
+                            <option value="Rhode Island">Rhode Island</option>
+                            <option value="South Carolina">South Carolina</option>
+                            <option value="South Dakota">South Dakota</option>
+                            <option value="Tennessee">Tennessee</option>
+                            <option value="Texas">Texas</option>
+                            <option value="Utah">Utah</option>
+                            <option value="Vermont">Vermont</option>
+                            <option value="Virginia">Virginia</option>
+                            <option value="Virgin Islands">Virgin Islands</option>
+                            <option value="Washington">Washington</option>
+                            <option value="West Virginia">West Virginia</option>
+                            <option value="Wisconsin">Wisconsin</option>
+                            <option value="Wyoming">Wyoming</option>
+                        </select>
+                        <!--credit to codepen.io/carlnunes for compiling this list of all US states and territories-->
+                    </label>
+                    <label for="pZip"></label>
+
+                </fieldset>
+                <!--Business Description-->
+                <fieldset>
+                    <legend>Business Details</legend>
+                </fieldset>
+                <!--Point of Contact-->
+                <fieldset>
+                    <legend>Point of Contact</legend>
+
+                    <label for="firstName">
+                        First Name
+                        <input type="text" name="first-name" id="firstName" required placeholder="Jacques">
+                    </label>
+
+                    <label for="lastName">
+                        Last Name
+                        <input type="text" name="last-name" id="lastName" required placeholder="Closeau">
+                    </label>
+
+                    <label for="contactNumber">
+                        Phone Number
+                        <input type="tel" name="contact-number" id="contactNumber">
+                    </label>
+
+                    <label for="contactEmail">
+                        Email
+                        <input type="email" name="contact-email" id="contactEmail">
+                    </label>
+
+                </fieldset>
+                <!--Social Media Links-->
+                <fieldset>
+                    <legend>Social Media</legend>
+
+                    <label for="facebookLink">
+                        Facebook
+                        <input type="url" name="facebook-link" id="facebookLink">
+                    </label>
+                    <label for="twitterLink">
+                        Twitter
+                        <input type="url" name="twitter-link" id="twitterLink">
+                    </label>
+                    <label for="googleLink">
+                        Google+
+                        <input type="url" name="google-link" id="googleLink">
+                    </label>
+                    <label for="linkedInLink">
+                        LinkedIn
+                        <input type="url" name="linkedin-link" id="linkedInLink">
+                    </label>
+                </fieldset>
+                <!--Membership Package/Subscription Tiers-->
+                <fieldset>
+                    <legend>Membership Package</legend>
+                </fieldset>
+                <!--Billing-->
+                <fieldset>
+                    <legend>Billing</legend>
+                </fieldset>
+                <!--Terms and Form Submission-->
+                <label for="tac">
+                    <input id="tac" type="checkbox" name="terms-and-conditions">
+                    I agree to the Terms and Conditions
+                </label>
+                <p class="form-terms">
+                    <a href="terms-and-conditions.html">Read our Terms and Conditions</a>
+                </p>
+
+            </form>
+        </section>
     </main>
-        <h2 class="main-title">Become a Member</h2>
-        <section class="join-form-box"></section>
+
     <footer>
         <section class="bottom-nav-box">
             <nav class="bottom-nav">
@@ -73,10 +247,15 @@
 
         </section>
         <section class="copyright-box">
-            <p>&copy;<span id="copy-year"></span> Beryl Chamber of Commerce | <a href="">Terms and Conditions</a> | <a href="">Privacy Policy</a> | Last Updated: <span id="last-updated"></span></p>
+            <p>&copy;<span id="copy-year"></span> Beryl Chamber of Commerce | <a href="">Terms and Conditions</a> | <a
+                    href="">Privacy Policy</a> | Last Updated: <span id="last-updated"></span></p>
         </section>
 
     </footer>
+    <!-- scripts -->
+    <script src="js/webfontload.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/copy-box.js"></script>
 </body>
 
 </html>
