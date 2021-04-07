@@ -53,6 +53,10 @@ ul {
     list-style: none;
 }
 
+label {
+    display: block;
+}
+
 header {
     color: var(--paragraph-color-on-color);
     background-color: var(--color-accent2);
