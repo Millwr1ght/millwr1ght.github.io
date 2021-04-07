@@ -1,36 +1,103 @@
 {
-    "businesses" : [
+    "businesses": [
         {
             "name": "Example Ltd",
-            "address": "100 N 100 W Beryl Junction, UT",
+            "address": "100 N 100 W Beryl Junction, UT 84714",
             "phone": "(435) 435-4354",
             "logo": {
                 "src:": "",
                 "alt": "Example Ltd. logo"
             },
             "website": "business.website.org",
-            "email": "business.name@domain.org",
-            "contact": "John Smith",
-            "position": "CEO"     
+            "email": "business.name@domain.org"
+        },
+        {
+            "name": "Moyle Irrigation Inc.",
+            "address": "58 N Hwy 18 Beryl, UT, 84714",
+            "phone": "(435) 439-5260",
+            "logo": {
+                "src:": "https://lirp.cdn-website.com/723f902f18234f999e57b0ec1855322a/dms3rep/multi/opt/925-160w.png",
+                "alt": "Moyle Irrigation Inc."
+            },
+            "website": "moyleirrigation.com",
+            "email": "mirrigation@scinternet.net"
+        },
+        {
+            "name": "Stotz Equipment",
+            "address": "827 S Hwy 18 Beryl, UT, 84714",
+            "phone": "(435) 439-5544",
+            "logo": {
+                "src": "https://www.stotzequipment.com/images/dealer-logo.png",
+                "alt": "Stotz Equipment"
+            },
+            "website": "stotzequipment.com",
+            "email": "---"
+        },
+        {
+            "name": "Bowler AG",
+            "address": "1200 S Hwy 18 Beryl, UT, 84714",
+            "phone": "(435) 439-5383",
+            "logo": {
+                "src": "https://static.wixstatic.com/media/9f3813_c9bcc16ca07747e18a954d61df0d2dac~mv2.png",
+                "alt": "Bowler AG Trailers"
+            },
+            "website": "bowlerag.com",
+            "email": "bowlerag.llc@gmail.com"
+        },
+        {
+            "name": "Bracken Valley Tire Repair, LLC",
+            "address": "555 S Hwy 18 Beryl, UT, 84714",
+            "phone": "(435) 439-5900",
+            "logo": {
+                "src": "---",
+                "alt": "Bracken Valley Tire"
+            },
+            "website": "https://brackensvalleytire.com/",
+            "email": "---"
+        },
+        {
+            "name": "Fun N Games Equipment",
+            "address": "25 N Main St Modena, UT, 84753",
+            "phone": "(435) 439-5212",
+            "logo": {
+                "src": "",
+                "alt": ""
+            },
+            "website": "",
+            "email": ""
+        },
+        {
+            "name": "Harker Dairy LLC",
+            "address": "350 W 800 N, Beryl, UT 84714",
+            "phone": "(435) 864-7466",
+            "logo": {
+                "src": "",
+                "alt": ""
+            },
+            "website": "",
+            "email": ""
+        },
+        {
+            "name": "La Yucateca",
+            "address": "Holt Dairy Rd, Newcastle, UT 84756",
+            "phone": "(435) 218-2989",
+            "logo": {
+                "src": "images/directory/yucateca.jpg",
+                "alt": "La Yucateca"
+            },
+            "website": "",
+            "email": ""
         },
         {
             "name": "",
             "address": "",
             "phone": "",
             "logo": {
-                "src:": "",
+                "src": "",
                 "alt": ""
             },
             "website": "",
-            "email": "",
-            "contact": "",
-            "position": ""     
-        },
-        {},
-        {},
-        {},
-        {},
-        {},
-        {}
+            "email": ""
+        }
     ]
 }
