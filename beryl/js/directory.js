@@ -1,21 +1,19 @@
 const directoryURL = 'millwr1ght.github.io/beryl/js/directory.json';
-
 fetch(directoryURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
-
         let directory = jsObject.businesses;
-        //create cards
+        //for each business, create a grid card
         for (const business in directory) {
             let card = document.createElement('section');
+            card.classList.add('directory-card');
             let cardContent = directory[business];
 
             //Business name
-            let h2 = document.createElement('h2');
-            h2.textContent = cardContent.name;
-            h2.classList.add('card-title');
-            card.appendChild(h2);
+            let h3 = document.createElement('h3');
+            h3.textContent = cardContent.name;
+            h3.classList.add('card-title');
+            card.appendChild(h3);
 
             //Physical address
             let address = document.createElement('p');
@@ -53,13 +51,5 @@ fetch(directoryURL)
                 logo.classList.add('card-img');
                 card.appendChild(logo);
             }
-
-            
-            
-            
-            
-
-
-
         }
     });
