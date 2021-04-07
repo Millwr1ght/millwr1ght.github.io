@@ -33,10 +33,14 @@
 
 body {
     max-width: 640px;
+    margin: 0 auto;
     font-family: var(--paragraph-font);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--heading-font);
 }
 
@@ -45,6 +49,75 @@ a {
     color: black;
 }
 
+ul {
+    list-style: none;
+}
+
 header {
+    color: var(--paragraph-color-on-color);
     background-color: var(--color-accent2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 75px;
+    padding: 1rem;
+}
+
+.sign-in-box {
+    justify-self: flex-end;
+}
+
+.top-nav-box {
+    width: 100%;
+}
+
+.top-nav {
+    background-color: var(--nav-background-color);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+#top-nav-list {
+    margin: auto;
+    padding: 0;
+    display: block;
+}
+
+.top-nav-button {
+    border: none;
+    background: none;
+}
+
+.top-nav-icon {
+    width: 50px;
+    display: block;
+    padding: 0.5rem;
+}
+
+.top-nav-item {
+    display: none;
+    padding: 0.25rem 0;
+}
+
+.responsive li {
+    display: block;
+}
+
+.top-nav-link {
+    color: var(--nav-link-color);
+}
+
+.top-nav-link:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+main {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 1rem;
 }

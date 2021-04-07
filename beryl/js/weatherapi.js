@@ -8,11 +8,10 @@ const apiURL_current = `https://api.openweathermap.org/data/2.5/weather?id=${cit
 fetch(apiURL_current)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
-
+        //console.log(jsObject);
         let temperature = jsObject.main.temp
         let windSpeed = jsObject.wind.speed;
-        console.log(temperature, temperature <= 50, windSpeed, windSpeed > 3) //check inputs
+        //console.log(temperature, temperature <= 50, windSpeed, windSpeed > 3) //check inputs
         if (temperature > 50 || windSpeed <= 3) {
             document.getElementById('weather-wind-chill').innerHTML = "N/A";
         } else {

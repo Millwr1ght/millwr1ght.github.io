@@ -49,6 +49,7 @@ fetch(directoryURL)
                 logo.setAttribute('src', cardContent.logo);
                 logo.setAttribute('alt', cardContent.name);
                 logo.classList.add('card-img');
+                logo.setAttribute('loading', 'lazy');
                 card.appendChild(logo);
             }
         }

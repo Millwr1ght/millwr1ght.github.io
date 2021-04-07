@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <!-- styles -->
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <link rel="stylesheet" type="text/css" href="small.css">
-    <link rel="stylesheet" type="text/css" href="mediium.css">
-    <link rel="stylesheet" type="text/css" href="large.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/small.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
     <link rel="shortcut icon" href="sun.ico" type="image/x-icon">
 </head>
 
 <body>
     <header>
         <section class="logo-box">
-            <img class="logo" alt="BCC logo" loading="lazy" src="images/sun.svg">
+            <img class="logo" alt="BCC logo" src="images/sun.svg">
         </section>
 
         <section class="sign-in-box">
@@ -31,8 +31,8 @@
 
         <section class="top-nav-box">
             <nav class="top-nav">
-                <ul id="top-nav-list">
-                    <li class="top-nav-menu"><img class="top-nav-icon" src="/images/sun.svg"></li>
+                <ul class="top-nav-list">
+                    <li class="top-nav-menu"><button class="top-nav-button" onclick="navToggle()"><img class="top-nav-icon" src="/images/menu.svg"></button></li>
                     <li class="top-nav-item active"><a class="top-nav-link" href="index.html">Home</a></li>
                     <li class="top-nav-item"><a class="top-nav-link" href="about/about.html">About</a></li>
                     <li class="top-nav-item"><a class="top-nav-link" href="join/join.html">Join</a></li>
