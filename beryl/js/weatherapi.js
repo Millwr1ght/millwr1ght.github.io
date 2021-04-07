@@ -28,8 +28,8 @@ fetch(apiURL_current)
         document.getElementById('weather-humid').textContent = jsObject.main.humidity; //current humid
 
         //image
-        let imagesrc = 'https://openweathermap.org/img/w/' + day.weather[0].icon + '.png';
-        let desc = day.weather[0].description;
+        let imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
+        let desc = jsObject.weather[0].description;
         document.getElementById('weather-img').setAttribute('src', imagesrc);
         document.getElementById('weather-img').setAttribute('alt', desc);
 

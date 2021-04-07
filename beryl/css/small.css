@@ -31,3 +31,20 @@
     --paragraph-font: 'Oxygen', Arial, sans-serif;
 }
 
+body {
+    max-width: 640px;
+    font-family: var(--paragraph-font);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: var(--color-accent2);
+}
