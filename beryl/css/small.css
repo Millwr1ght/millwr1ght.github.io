@@ -62,9 +62,20 @@ header {
     align-items: center;
 }
 
+.sign-in-box {
+    margin: 0 1rem;
+}
+.sign-button {
+    color: var(--color-primary);
+    background-color: var(--color-accent1);
+    border: none;
+    padding: 8px;
+}
+
 .logo {
     width: 75px;
     padding: 1rem;
+    background: var(--color-accent1);
 }
 
 .sign-in-box {
@@ -81,7 +92,7 @@ header {
     padding: 0.5rem;
 }
 
-#top-nav-list {
+.top-nav-list {
     margin: auto;
     padding: 0;
     display: block;
@@ -95,23 +106,21 @@ header {
 .top-nav-icon {
     width: 50px;
     display: block;
-    padding: 0.5rem;
+    padding: 2px;
 }
 
 .top-nav-item {
+    color: var(--nav-link-color);
     display: none;
     padding: 0.25rem 0;
+    font-size: 22px;
 }
 
 .responsive li {
     display: block;
 }
 
-.top-nav-link {
-    color: var(--nav-link-color);
-}
-
-.top-nav-link:hover {
+.top-nav-item:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
