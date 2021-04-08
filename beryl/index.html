@@ -15,6 +15,16 @@
 </head>
 
 <body>
+
+    <div class="weather-alert">
+        <div id="alert-header"></div>
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <div class="alert-container">
+            <p id="alert-sender"></p>
+            <p id='alert-description'></p>
+        </div>
+    </div>
+
     <header>
         <section class="logo-box">
             <img class="logo" alt="BCC logo" src="images/sun.svg">
@@ -32,7 +42,8 @@
         <section class="top-nav-box">
             <nav class="top-nav">
                 <ul class="top-nav-list">
-                    <li class="top-nav-menu"><button class="top-nav-button" onclick="navToggle()"><img class="top-nav-icon" src="/images/menu.svg"></button></li>
+                    <li class="top-nav-menu"><button class="top-nav-button" onclick="navToggle()"><img
+                                class="top-nav-icon" src="/images/menu.svg"></button></li>
                     <li class="top-nav-item active"><a class="top-nav-link" href="index.html">Home</a></li>
                     <li class="top-nav-item"><a class="top-nav-link" href="about.html">About</a></li>
                     <li class="top-nav-item"><a class="top-nav-link" href="join.html">Join</a></li>
@@ -47,9 +58,9 @@
         <h2 class="main-title">Welcome to the Beryl Junction Chamber of Commerce</h2>
         <section class="home-intro-box">
             <h3 class="section-title">Cultivating Community Growth</h3>
-            <p>Here at the Beryl Junction Chamber, we love to see our community grow and 
-                we do that by helping you! We provide opportunities for businesses to 
-                work with community members, partners, and leaders to  </p>
+            <p>Here at the Beryl Junction Chamber, we love to see our community grow and
+                we do that by helping you! We provide opportunities for businesses to
+                work with community members, partners, and leaders to </p>
         </section>
 
         <section class="home-ad-box">
@@ -153,8 +164,8 @@
         </section>
 
         <section class="copyright-box">
-            <p>&copy;<span id="copy-year"></span> Beryl Junction Chamber of Commerce | <a href="">Terms and Conditions</a> | <a
-                    href="">Privacy Policy</a> | Last Updated: <span id="last-updated"></span></p>
+            <p>&copy;<span id="copy-year"></span> Beryl Junction Chamber of Commerce | <a href="">Terms and
+                    Conditions</a> | <a href="">Privacy Policy</a> | Last Updated: <span id="last-updated"></span></p>
         </section>
 
     </footer>

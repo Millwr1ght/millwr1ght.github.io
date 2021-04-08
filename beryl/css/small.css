@@ -145,3 +145,54 @@ main {
     margin: 0 auto;
     padding: 1rem;
 }
+
+
+
+/* home */
+
+.weather-alert {
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    margin-left: 20px;
+    max-width: 300px;
+}
+
+#alert-header {
+    padding: 25px 15px;
+    background: var(--color-gray);
+    font-size: 20px;
+    color: var(--color-white);
+}
+
+.alert-container {
+    padding: 15px;
+    background-color: #ccc;
+    color: black
+}
+
+.closebtn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: var(--color-white);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: var(--color-primary);
+}
+
+
+
+/* contact us */
+@media screen and (max-width:640px) {
+    #big-map {
+        display: none;
+    }
+
+    #small-map {
+        display: block;
+    }
+}

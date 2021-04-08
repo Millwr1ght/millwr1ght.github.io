@@ -14,4 +14,14 @@
     .top-nav-list {
         display: flex;   
     }
+
+
+    /* home */
+    /* contact us */
+    #big-map {
+        display: block;
+    }
+    #small-map {
+        display: none;
+    }
 }

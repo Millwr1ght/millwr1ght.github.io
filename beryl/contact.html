@@ -55,16 +55,17 @@
 
         <section class="contact-map-box">
             <!--hidden when screen width < 640px-->
-            <iframe class="contact-map-big"
+            <iframe id="big-map"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d35788.20876913871!2d-113.64991334568982!3d37.707029337024146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1617790521115!5m2!1sen!2sus"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             <!--hidden when screen width > 640px-->
-            <iframe class="contact-map-small"
+            <iframe id="small-map"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d35788.20876913871!2d-113.64991334568982!3d37.707029337024146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1617790521115!5m2!1sen!2sus"
                 width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
 
         <section class="contact-form-box">
+            <h3 class="section-title">Send Us a Message!</h3>
             <form class="contact-form" action="thank-you.html" method="get">
                 <label for="firstName">
                     First Name
@@ -78,6 +79,8 @@
                     Phone Number
                     <input type="text" name="phone-number" id="phone">
                 </label>
+                <label for="comment">Message</label>
+                <textarea name="message" id="comment" cols="50" rows="10" placeholder="Comments, question, concerns, suggestions, witty remarks, etc"></textarea>
             </form>
         </section>
 
