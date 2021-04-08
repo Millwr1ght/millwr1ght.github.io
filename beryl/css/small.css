@@ -46,7 +46,6 @@ h4 {
 
 a {
     text-decoration: none;
-    color: black;
 }
 
 ul {
@@ -69,17 +68,23 @@ header {
 .sign-in-box {
     margin: 0 1rem;
 }
+
 .sign-button {
-    color: var(--color-primary);
+    color: var(--color-accent2);
     background-color: var(--color-accent1);
     border: none;
     padding: 8px;
 }
 
+.logo-box {
+    margin: 1rem 0 0 1rem;
+}
+
 .logo {
     width: 75px;
-    padding: 1rem;
+    padding: 0.5rem;
     background: var(--color-accent1);
+    border-radius: 67px;
 }
 
 .sign-in-box {
@@ -124,10 +129,16 @@ header {
     display: block;
 }
 
+.top-nav-link:link,
+:visited {
+    color: var(--nav-link-color);
+}
+
 .top-nav-item:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
+
 
 main {
     max-width: 560px;
