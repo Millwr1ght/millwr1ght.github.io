@@ -44,7 +44,7 @@ fetch(directoryURL)
             }
 
             //logo, if there is one
-            if (logo != "") {
+            if (cardContent.logo != "") {
                 let logo = document.createElement('img');
                 logo.setAttribute('src', cardContent.logo);
                 logo.setAttribute('alt', cardContent.name);
@@ -52,5 +52,7 @@ fetch(directoryURL)
                 logo.setAttribute('loading', 'lazy');
                 card.appendChild(logo);
             }
+
+            document.querySelector('.directory-grid').appendChild(card);
         }
     });
