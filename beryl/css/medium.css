@@ -58,6 +58,10 @@
     }
 
     /* directory */
+    .grid-mode {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
     /* join */
 
 

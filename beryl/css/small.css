@@ -48,7 +48,7 @@ h4 {
     font-family: var(--heading-font);
 }
 
-a {
+a, a:visited {
     text-decoration: none;
 }
 
@@ -290,6 +290,33 @@ footer {
 
 .toggle-icon{
     width: 26px;
+}
+
+.directory-card {
+    border: 3px solid var(--color-primary);
+    background-color: var(--color-accent2);
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.grid-mode {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.list-mode {
+    display: block;
+}
+
+.list-mode .directory-card {
+    display: flex;
+}
+
+.card-img {
+    margin-left: 4rem;
+    max-width: 200px;
+    padding: 2px;
+    border: 2px solid var(--color-accent1);
 }
 /* join */
 

@@ -19,4 +19,10 @@
     .copyright-box {
         grid-area: 2/1/3/4;
     }
+
+
+    /* directory */
+    .grid-mode {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
