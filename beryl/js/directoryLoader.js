@@ -1,4 +1,4 @@
-const directoryURL = 'millwr1ght.github.io/beryl/js/directory.json';
+const directoryURL = 'https://millwr1ght.github.io/beryl/js/directory.json';
 fetch(directoryURL)
     .then((response) => response.json())
     .then((jsObject) => {
