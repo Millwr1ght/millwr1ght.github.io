@@ -107,6 +107,7 @@ header {
 
 .top-nav-box {
     width: 100%;
+    align-self: flex-end;
 }
 
 .top-nav {
@@ -199,6 +200,7 @@ footer {
 }
 
 .copyright-box {
+    width: 100%;
     font-size: 12px;
     text-align: center;
     background-color: var(--color-accent1);
