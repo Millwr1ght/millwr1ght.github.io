@@ -60,6 +60,9 @@ label {
     display: block;
 }
 
+section {
+    margin: 1rem auto;
+}
 header {
     color: var(--paragraph-color-on-color);
     background-color: var(--color-accent2);
@@ -258,9 +261,9 @@ footer {
 
 /* about */
 
+
 .about-grid {
-    display: grid;
-    grid-template-columns: 60% 40%;
+    display: block;
 }
 
 .events-grid {
@@ -322,6 +325,19 @@ footer {
 
 
 /* contact us */
+.contact-info-box {
+    text-align: center;
+}
+
+.contact-map-box {
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.contact-form-box {
+    padding: 1rem;
+}
+
 @media screen and (max-width:640px) {
     #big-map {
         display: none;
