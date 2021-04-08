@@ -45,6 +45,14 @@
 
     <main>
         <h2 class="main-title">Directory</h2>
+        <div class="button-box">
+            <button class="directory-toggle" onclick="listToggleOff()">
+                <img src="images/grid.svg" alt="grid toggle" id="grid-icon" class="toggle-icon">
+            </button>
+            <button class="directory-toggle" onclick="gridToggleOff()">
+                <img src="images/list.svg" alt="list toggle" id="list-icon">
+            </button>
+        </div>
         <section class="directory-grid grid-mode">
         </section>
     </main>
@@ -84,8 +92,9 @@
         </section>
 
         <section class="copyright-box">
-            <p>&copy;<span id="copy-year"></span> Beryl Junction Chamber of Commerce | <a href="">Terms and Conditions</a> | <a
-                    href="">Privacy Policy</a> | Last Updated: <span id="last-updated"></span></p>
+            <p>&copy;<span id="copy-year"></span> Beryl Junction Chamber of Commerce | <a href="">Terms and
+                Conditions</a> | <a href="">Privacy Policy</a></p> 
+        <p>Last Updated: <span id="last-updated"></span></p>
         </section>
 
     </footer>

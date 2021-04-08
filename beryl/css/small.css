@@ -167,6 +167,7 @@ footer {
 .bottom-nav-list {
     padding: 1rem;
 }
+
 .bottom-nav-item {
     color: var(--color-accent2)
 }
@@ -241,6 +242,56 @@ footer {
     color: var(--color-primary);
 }
 
+.main-title {
+    text-align: center;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.banner-ad {
+    max-width: 560px;
+}
+
+
+
+/* about */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.event-box {
+    border: 1px solid var(--color-primary);
+    padding: 1rem;
+    background-color: var(--color-accent2);
+}
+
+.event-date {
+    display: block;
+    float: right;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+/* directory */
+
+.directory-toggle {
+    background: none;
+    border: none;
+}
+
+.toggle-icon{
+    width: 26px;
+}
+/* join */
 
 
 /* contact us */

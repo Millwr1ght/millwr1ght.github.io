@@ -47,7 +47,20 @@
     .copyright-box {
         grid-area: 3/1/4/3
     }
+
     /* home */
+
+
+    /* about */
+    .events-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* directory */
+    /* join */
+
+
     /* contact us */
     #big-map {
         display: block;
