@@ -1,9 +1,22 @@
 @media screen and (min-width: 1080px) {
-    body {
+    main {
         max-width: 1200px;
     }
 
     .logo {
         width: 150px;
+    }
+
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2fr 4rem;
+    }
+
+    .social-box {
+        grid-area: 1/2/2/3;
+    }
+
+    .copyright-box {
+        grid-area: 2/1/3/4;
     }
 }

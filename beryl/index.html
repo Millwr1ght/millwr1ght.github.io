@@ -16,7 +16,7 @@
 
 <body>
 
-    <div class="weather-alert">
+    <div id="weather-alert">
         <div id="alert-header"></div>
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
         <div class="alert-container">
@@ -71,13 +71,31 @@
         </section>
 
         <section class="home-weather-box">
-            <h3 class="weather-title">Current Weather</h3>
-            <img class="weather-img" id="weather-img" src="" alt="weather-img">
-            <div class="weather" id="weather-condition"></div>
-            <div class="weather" id="weather-temp"></div>
-            <div class="weather" id="weather-speed"></div>
-            <div class="weather" id="weather-humid"></div>
-            <div class="weather" id="weather-wind-chill"></div>
+            <div class="weather-current">
+                <h3 class="weather-title">Today's Weather</h3>
+                <img class="weather-img" id="weather-img" src="" alt="weather-img">
+                <div class="weather" id="weather-condition"></div>
+                <div class="weather" id="weather-temp"></div>
+                <div class="weather" id="weather-humid"></div>
+            </div>
+            <h3 class="weather-title">Three Day Forecast</h3>
+            <div class="weather-forecast-grid">
+                <div class="weather-card">
+                    <h4><span id="today1"></span></h4>
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+                <div class="weather-card">
+                    <h4><span id="today2"></span></h4>
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+                <div class="weather-card">
+                    <h4><span id="today3"></span></h4>
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+            </div>
         </section>
 
         <section class="home-action-box">
@@ -147,7 +165,7 @@
         </section>
 
         <section class="social-box">
-            <img class="social-logo" src="images/sun.svg" alt="BCC logo">
+            <a href="index.html"><img class="social-logo" src="images/sun.svg" alt="BCC logo"></a>
             <a class="social-link" href="http://www.facebook.com"><img class="icon" src="images/facebook.svg"
                     alt="Facebook"></a>
             <a class="social-link" href="http://www.twitter.com"><img class="icon" src="images/twitter.svg"
@@ -157,15 +175,16 @@
         </section>
 
         <section class="contact-box">
-            <p>Beryl Junction Chamber of Commerce</p>
-            <p>332 Pioneer Rd Beryl, UT 84714</p>
-            <p>+1(435) 555-5555</p>
-            <p>info@beryljunctioncc.org</p>
+            <p>Beryl Junction Chamber of Commerce<br>
+            332 Pioneer Rd<br> Beryl, UT 84714<br>
+            +1(435) 555-5555<br>
+            info@beryljunctioncc.org</p>
         </section>
 
         <section class="copyright-box">
             <p>&copy;<span id="copy-year"></span> Beryl Junction Chamber of Commerce | <a href="">Terms and
-                    Conditions</a> | <a href="">Privacy Policy</a> | Last Updated: <span id="last-updated"></span></p>
+                    Conditions</a> | <a href="">Privacy Policy</a></p> 
+            <p>Last Updated: <span id="last-updated"></span></p>
         </section>
 
     </footer>
