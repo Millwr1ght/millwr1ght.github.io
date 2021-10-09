@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/small.css">
     <link rel="stylesheet" type="text/css" href="css/medium.css" media="(min-width: 641px and max-width: 960px)">
     <link rel="stylesheet" type="text/css" href="css/large.css" media="(min-width: 961px)">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="../favicon.ico">
 </head>
 
 <body>
@@ -85,7 +85,8 @@
                     <div>
                         <label class="not-radio">Storm severity:
                             <input type="range" name="severity" id="severity" value="5" min="1" max="10" step="1"
-                                list="tickmarks" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                                list="tickmarks" oninput="adjustSeverity(this.value)"
+                                onchange="adjustSeverity(this.value)">
                             <span id="severity-output">5</span>
                             <datalist id="tickmarks">
                                 <option value="1">
@@ -101,7 +102,7 @@
                             </datalist>
                         </label>
                     </div>
-                    
+
 
                     <label class="not-radio">Where is this storm?
                         <select name="storm-region" id="storm-region" value="Select Region..">
@@ -114,8 +115,9 @@
 
                     <div id="danger-list">Are you in danger?</div>
                     <label class="radio"><input type="radio" name="in-danger" id="danger-yes" value="Yes">Yes</label>
-                    <label class="radio"><input type="radio" name="in-danger" id="danger-maybe" value="Maybe">Maybe</label>
-                    <label class="radio"><input type="radio" name="in-danger" id="danger-no" value="No">No</label>                    
+                    <label class="radio"><input type="radio" name="in-danger" id="danger-maybe"
+                            value="Maybe">Maybe</label>
+                    <label class="radio"><input type="radio" name="in-danger" id="danger-no" value="No">No</label>
                 </fieldset>
 
                 <fieldset>

@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/small.css">
     <link rel="stylesheet" type="text/css" href="css/medium.css">
     <link rel="stylesheet" type="text/css" href="css/large.css">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="../favicon.ico">
 </head>
 
 <body>
@@ -91,7 +91,8 @@
                         <label class="not-radio" for="severity">
                             Storm severity:
                             <input type="range" name="severity" id="severity" value="5" min="1" max="10" step="1"
-                                list="tickmarks" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                                list="tickmarks" oninput="adjustSeverity(this.value)"
+                                onchange="adjustSeverity(this.value)">
                             <span id="severity-output">5</span>
                             <datalist id="tickmarks">
                                 <option value="1">
@@ -107,7 +108,7 @@
                             </datalist>
                         </label>
                     </div>
-                    
+
 
                     <label class="not-radio" for="storm-region">
                         Where is this storm?
@@ -120,9 +121,12 @@
                     </label>
 
                     <div id="danger-list">Are you in danger?</div>
-                    <label class="radio" for="in-danger-yes"><input type="radio" name="in-danger-yes" id="in-danger-yes" value="Yes">Yes</label>
-                    <label class="radio" for="in-danger-maybe"><input type="radio" name="in-danger-maybe" id="in-danger-maybe" value="Maybe">Maybe</label>
-                    <label class="radio" for="in-danger-no"><input type="radio" name="in-danger-no" id="in-danger-no" value="No">No</label>                    
+                    <label class="radio" for="in-danger-yes"><input type="radio" name="in-danger-yes" id="in-danger-yes"
+                            value="Yes">Yes</label>
+                    <label class="radio" for="in-danger-maybe"><input type="radio" name="in-danger-maybe"
+                            id="in-danger-maybe" value="Maybe">Maybe</label>
+                    <label class="radio" for="in-danger-no"><input type="radio" name="in-danger-no" id="in-danger-no"
+                            value="No">No</label>
                 </fieldset>
 
                 <fieldset>
